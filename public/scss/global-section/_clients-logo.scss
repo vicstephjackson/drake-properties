@@ -1,0 +1,30 @@
+/* -------------------------------------
+2 Global Sections - 2.8 Clients Logo
+---------------------------------------- */
+.clients-logo {
+  padding-bottom: 119px;
+  padding-top: 0;
+  .clients-logo-carousel {
+    .owl-item {
+      .logo-item {
+        figure {
+          .image-holder {
+            img {
+              border: 1px solid #dddddd;
+            }
+          }
+        }
+      }
+    }
+    .owl-nav, .owl-dots {
+      display: none;
+    }
+  }
+  &.with-paady {
+    padding-top: 118px;
+    padding-bottom: 120px;
+  }
+  &.with-custom-paady {
+    padding-top: 72px;
+  }
+}

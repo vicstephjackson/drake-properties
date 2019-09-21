@@ -1,0 +1,21 @@
+/*-------------------------------------------------------------------------------
+  1. Global | 1.5 Logo
+-------------------------------------------------------------------------------*/
+
+.logo-image {
+  a {
+    display: inline-block;
+    margin-top: 6px;
+    img {
+      display: inline-block;
+      margin-right: 3px;
+    }
+    span {
+      font-weight: 700;
+      font-size: 32px;
+      color: $default_color;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+/* -------------------------------------
+2 Global Sections - 2.9 Property Rent & Sale double scroll
+---------------------------------------- */
+.double-rent-sale-listing {
+  background: #f6f6f6;
+  padding-bottom: 95px;
+  padding-top: 120px;
+  .top-head {
+    h4 {
+      text-align: left;
+      margin-bottom: 36px;
+      font-size: 28px;
+    }
+  }
+  .double-rent-sale-list {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    display: inline-block;
+    .house-status {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      span {
+        font-size: 10px;
+        background: #0c2e4f;
+        padding: 3px;
+        color: $primary_color;
+        text-transform: uppercase;
+        &.rent {
+          opacity: 0.6;
+        }
+        &.featured {
+          background: #e03434;
+        }
+      }
+    }
+    figure {
+      display: inline-block;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      .image-holder {
+        float: left;
+        overflow: hidden;
+        img {
+          width: auto;
+          transition: all 400ms ease-in-out;
+        }
+      }
+      .house-info {
+        display: flow-root;
+        padding: 13px 13px 0px 28px;
+        p {
+          display: inline-block;
+          color: #444444;
+          font-weight: 500;
+          font-size: 14px;
+          margin-bottom: 13px;
+        }
+        h4 {
+          text-align: left;
+          font-size: 23px;
+          margin-bottom: 3px;
+          color: #111111;
+          a {
+            color: #111111;
+            &:hover {
+              color: #009cff;
+            }
+          }
+        }
+        span {
+          font-weight: 300;
+          font-size: 14px;
+          color: #9b9b9b;
+          i {
+            margin-right: 7px;
+            font-size: 14px;
+          }
+        }
+        ul {
+          display: inline-block;
+          margin-top: 10px;
+          margin-bottom: 13px;
+          li {
+            display: inline-block;
+            float: left;
+            padding-right: 10px;
+            font-size: 14px;
+          }
+        }
+        .price {
+          font-size: 22px;
+        }
+      }
+    }
+    &:hover {
+      figure {
+        .image-holder {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  .double-rent-carousel {
+    .owl-item {
+      padding: 10px;
+    }
+    .owl-nav {
+      .owl-next, .owl-prev {
+        position: absolute;
+        right: 7px;
+        top: -69px;
+        background: transparent;
+        border: 1px solid #c8c8c8;
+        padding: 5px 12px;
+        opacity: 1;
+        border-radius: 0px;
+        i {
+          color: #666666;
+          font-size: 15px;
+        }
+        &:hover {
+          border-color: #009cff;
+          i {
+            color: #009cff;
+          }
+        }
+      }
+      .owl-prev {
+        right: 50px;
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+  &.ver-two {
+    padding: 121px 0px 114px;
+    background: #ffffff;
+    .double-rent-sale-list {
+      margin-bottom: 36px;
+    }
+    .listing-pagination {
+      margin-top: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  &.bg-clr {
+    background: #ffffff;
+    padding-bottom: 92px;
+  }
+}

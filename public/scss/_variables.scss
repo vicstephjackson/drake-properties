@@ -1,0 +1,31 @@
+/* button styles */
+
+$default_color: #000000;
+$primary_color: #FFFFFF;
+$secondary_color: #777777;
+
+//button default
+$button_default_bg: #009cff;
+$button_default_border: #009cff;
+$button_default_color: #fff;
+$button_default_bg_hover:transparent;
+
+// button primary
+$button_primary_bg: #22355b;
+$button_primary_border:#22355b;
+$button_primary_color: #fff;
+$button_primary_hover_bg: $primary_color;
+$button_primary_hover_color: #fff;
+
+// button secondary
+$button_secondary_bg: #424242;
+$button_secondary_border: #424242;
+$button_secondary_color: #fff;
+$button_secondary_hover_bg: $primary_color;
+$button_secondary_hover_border: $primary_color;
+$button_secondary_hover_color: #fff;
+
+// button subscribe
+$button_subscribe_bg: #0c273c;
+$button_subscribe_border: #0c273c;
+$button_subscribe_color: #fff;

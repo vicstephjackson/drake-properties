@@ -1,0 +1,17 @@
+/* -------------------------------------
+2 Global Sections - 2.28 Register Form
+---------------------------------------- */
+.register-form-fields {
+  .form-group {
+    .btn-default {
+      &.hvr-sweep-to-right {
+        &:hover {
+          color: #009cff;
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}

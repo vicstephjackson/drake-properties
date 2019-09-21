@@ -1,0 +1,41 @@
+/* -------------------------------------
+2 Global Sections - 2.16 About Experience
+---------------------------------------- */
+.about-experience {
+  background: #f6f6f6;
+  padding: 121px 0px 96px;
+  .experience-info {
+    padding-left: 10px;
+    h4 {
+      font-size: 28px;
+      line-height: 24px;
+      color: #111111;
+      margin-bottom: 30px;
+      margin-top: 14px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      color: #777777;
+      &.bold {
+        color: #333;
+        margin-bottom: 14px;
+      }
+    }
+    .btn-default {
+      margin-top: 20px;
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 9px 29px;
+      &.hvr-sweep-to-right {
+        &:hover {
+          color: #009cff;
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}

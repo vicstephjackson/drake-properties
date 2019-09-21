@@ -1,0 +1,136 @@
+/* ------------------------------------------------------------------------------
+
+  Template Name: Hacres
+  Description: Hacres - Simple Creative HTML Template
+  
+  
+1. Global 
+    1.1 Body
+    1.2 Buttons
+    1.3 Typography
+    1.4 Loader
+    1.5 Logo
+
+2. Global Sections
+    2.1  Header
+    2.2  Section : Home Page
+        2.2.1 : Home Page Banner
+        2.2.2 : Thumbnail Slider
+    2.3  Section : New House Listing
+    2.4  Section : Properties Sale & Rent
+    2.5  Section : Find Neighbor
+    2.6  Section : Greater Communities
+    2.7  Section : Testimonial
+    2.8  Section : Clients Logo
+    2.9  Section : Property Rent & Sale double scroll
+    2.10 Section : Popular Cities
+    2.11 Section : Recent News
+    2.12 Section : Property Search Form
+    2.13 Section : Promo Box
+    2.14 Section : Discover What You Want
+    2.15 Section : Preferred Choice
+    2.16 Section : About Experience
+    2.17 Section : Great Agents
+    2.18 Section : Services
+    2.19 Section : Pricing Table
+    2.20 Section : Sub Page Banner
+    2.21 Section : All Agents & Agency
+    2.22 Section : Filter Sidebar
+    2.23 Section : Sidebar Widgets
+    2.24 Section : Single Blog Page
+    2.25 Section : Comments
+    2.26 Section : Reply Form
+    2.27 Section : Contact Form
+    2.28 Section : Register Form
+    2.29 Section : Property Details
+    2.30 Section : Contact Address
+    2.31 Section : Get In Touch
+    2.32 Section : Map
+    2.33 Section : Footer
+
+3. Mediaquery
+*/
+
+@charset "UTF-8";
+@import "variables";
+
+/** --- Global Style Starts ---- **/
+
+/*-------------------------------------------------------------------------------
+  1. Global | 1.1 Body
+-------------------------------------------------------------------------------*/
+
+body {
+  overflow: hidden;
+  &.loaded {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+  }
+}
+
+.float-none {
+  float: none;
+}
+
+ul {
+  padding-left: 0px;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@import "components/buttons";
+@import "components/typhography";
+@import "components/loader";
+@import "components/logo";
+
+/** --- Global Sections ---- **/
+
+@import "global-section/header";
+@import "global-section/banner/home-v1-banner";
+@import "global-section/slider/thumbnail-slider";
+@import "global-section/house-list";
+@import "global-section/rent-sales";
+@import "global-section/find-neighborhood";
+@import "global-section/great-community";
+@import "global-section/testimonials";
+@import "global-section/clients-logo";
+@import "global-section/double-scroll-property-sales";
+@import "global-section/portfolios";
+@import "global-section/recent-news";
+@import "global-section/forms/property-search-form";
+@import "global-section/promo-box";
+@import "global-section/what-you-want";
+@import "global-section/preferred-choices";
+@import "global-section/about-experience";
+@import "global-section/great-agents";
+@import "global-section/services";
+@import "global-section/pricing-table";
+@import "global-section/banner/sub-page-banner";
+@import "global-section/all-agents-agency";
+@import "global-section/filter-sidebar";
+@import "global-section/sidebar-widgets";
+@import "global-section/single-blog";
+@import "global-section/comments";
+@import "global-section/forms/reply-form";
+@import "global-section/forms/contact-form";
+@import "global-section/forms/regsiter-form";
+@import "global-section/property-details";
+@import "global-section/contact-page-sections/address";
+@import "global-section/contact-page-sections/contact-get-in-touch";
+@import "global-section/contact-page-sections/map";
+@import "global-section/footer";
+

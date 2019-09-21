@@ -1,0 +1,64 @@
+/* -------------------------------------
+2 Global Sections - 2.19 Pricing Table
+---------------------------------------- */
+.pricing-table {
+  padding: 120px 0px 120px;
+  .pricing-table-list {
+    background-color: #22355b;
+    padding: 70px 0px 70px;
+    h1 {
+      font-weight: 700;
+      font-size: 55px;
+      color: $primary_color;
+      margin-bottom: 10px;
+      sup {
+        font-size: xx-large;
+      }
+    }
+    h5 {
+      color: $primary_color;
+      font-size: 25px;
+      margin-bottom: 27px;
+    }
+    ul {
+      li {
+        font-size: 18px;
+        color: $primary_color;
+        padding: 7px 0px 8px;
+        &:last-child {
+          padding-bottom: 0px;
+        }
+        &:first-child {
+          padding-top: 0px;
+        }
+      }
+    }
+    .btn-default {
+      margin-top: 44px;
+      border-radius: 3px;
+      font-size: 15px;
+      padding: 10px 33px;
+      &:hover {
+        border-color: $primary_color;
+        background: transparent;
+      }
+    }
+    &.active, &:hover {
+      background-image: url("../images/pricing-table-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0px;
+      .layer {
+        background-color: rgba(0, 156, 255, 0.75);
+        padding: 70px 0px 70px;
+      }
+      .btn-default {
+        background: #22355b;
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

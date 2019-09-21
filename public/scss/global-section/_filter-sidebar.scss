@@ -1,0 +1,264 @@
+/* -------------------------------------
+2 Global Sections - 2.22 Filter Sidebar
+---------------------------------------- */
+.filter-sidebar {
+  padding-left: 20px;
+  h4 {
+    font-size: 16px;
+    margin-bottom: 17px;
+    color: #111111;
+  }
+  ul {
+    li {
+      padding-bottom: 7px;
+      color: #009cff;
+      font-size: 15px;
+      a {
+        color: #009cff;
+        font-size: 15px;
+        i {
+          font-size: 13px;
+        }
+        &:hover {
+          color: #111111;
+        }
+      }
+      span {
+        color: #777777;
+        font-size: 13px;
+      }
+      &:last-child {
+        padding-bottom: 0px;
+      }
+      label {
+        margin-bottom: 0px;
+      }
+      .check {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        background-clip: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0px 3px 0 0;
+        -webkit-transition: background-color 0.25s;
+        transition: background-color 0.25s;
+        background-color: #fff;
+        border: 1px solid #009cff;
+      }
+      .check:checked:after {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 6px;
+        border: 0 solid #333;
+        border-width: 0 0 2px 2px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 2px;
+        left: 2px;
+      }
+      .check:disabled {
+        opacity: 0.65;
+      }
+      .check:focus {
+        outline: none;
+      }
+      .check:checked {
+        background-color: #fff;
+        border-color: #009cff;
+      }
+      .check:checked:after {
+        border-color: #009cff;
+      }
+      .check-info {
+        background-color: #fff;
+        border: 1px solid #009cff;
+      }
+      .check-info:checked {
+        background-color: #009cff;
+        border-color: #009cff;
+      }
+      .check-info:checked:after {
+        border-color: #fff;
+      }
+      &:hover {
+        label {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .filter-status {
+    box-shadow: 1px 1px 9px -2px #ccc;
+    padding: 25px 29px 25px 29px;
+    margin-bottom: 31px;
+  }
+  .austin-contact-form-fields {
+    .form-group {
+      margin-bottom: 10px;
+      .form-control {
+        height: 43px;
+        padding-left: 18px;
+        margin-bottom: 0px;
+        &::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #111111;
+        }
+        &:-ms-input-placeholder {
+          /* IE 10+ */
+          color: #111111;
+        }
+        &l:-moz-placeholder {
+          /* Firefox 18- */
+          color: #111111;
+        }
+        &.message-area {
+          min-height: 134px;
+        }
+      }
+      .btn-default {
+        border-radius: 3px;
+        padding: 10px 31px;
+        font-size: 15px;
+        margin-top: 9px;
+        &.hvr-sweep-to-right {
+          &:hover {
+            color: #009cff;
+            &::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .help {
+    figure {
+      position: relative;
+      margin: 0;
+      .image-holder {
+        overflow: hidden;
+        background: #009cff;
+        img {
+          opacity: 0.6;
+          width: 100%;
+        }
+      }
+    }
+    .help-text {
+      width: 100%;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      padding: 0px 15px 0px 15px;
+      h6, h1, p {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 40px;
+        margin-bottom: 41px;
+      }
+      p {
+        display: block;
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 0px;
+      }
+      img {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .appointment {
+    border: 1px solid #e3e3e3;
+    padding: 18px 27px 12px 20px;
+    margin-bottom: 30px;
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+    h6 {
+      font-size: 14px;
+      line-height: 24px;
+      color: #777777;
+      margin-bottom: 23px;
+      font-style: italic;
+    }
+    .appoinment-form-fields {
+      .form-group {
+        margin-bottom: 10px;
+        .form-control {
+          margin-bottom: 0px;
+          height: 42px;
+          padding-left: 24px;
+
+          &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #666666;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #666666;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #666666;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          &l:-moz-placeholder {
+            /* Firefox 18- */
+            color: #666666;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          &.message-area {
+            min-height: 100px;
+          }
+        }
+        .input-group-addon {
+          width: auto;
+          position: absolute;
+          top: 0;
+          right: 14px;
+          height: 45px;
+          border-bottom-right-radius: 5px !important;
+          border-top-right-radius: 5px !important;
+          color: #777777;
+          z-index: 9;
+          i {
+            vertical-align: middle;
+            padding-top: 13px;
+          }
+        }
+        .btn-default {
+          width: 100%;
+          border-radius: 0px;
+          &.hvr-sweep-to-right {
+            &:hover {
+              color: #009cff;
+              &::before {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

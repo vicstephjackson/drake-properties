@@ -1,0 +1,7023 @@
+/* ------------------------------------------------------------------------------
+  Template Name: Hacres
+  Description: Hacres - Simple Creative HTML Template
+  
+  
+1. Global 
+    1.1 Body
+    1.2 Buttons
+    1.3 Typography
+    1.4 Loader
+    1.5 Logo
+2. Global Sections
+    2.1  Header
+    2.2  Section : Home Page
+        2.2.1 : Home Page Banner
+        2.2.2 : Thumbnail Slider
+    2.3  Section : New House Listing
+    2.4  Section : Properties Sale & Rent
+    2.5  Section : Find Neighbor
+    2.6  Section : Greater Communities
+    2.7  Section : Testimonial
+    2.8  Section : Clients Logo
+    2.9  Section : Property Rent & Sale double scroll
+    2.10 Section : Popular Cities
+    2.11 Section : Recent News
+    2.12 Section : Property Search Form
+    2.13 Section : Promo Box
+    2.14 Section : Discover What You Want
+    2.15 Section : Preferred Choice
+    2.16 Section : About Experience
+    2.17 Section : Great Agents
+    2.18 Section : Services
+    2.19 Section : Pricing Table
+    2.20 Section : Sub Page Banner
+    2.21 Section : All Agents & Agency
+    2.22 Section : Filter Sidebar
+    2.23 Section : Sidebar Widgets
+    2.24 Section : Single Blog Page
+    2.25 Section : Comments
+    2.26 Section : Reply Form
+    2.27 Section : Contact Form
+    2.28 Section : Register Form
+    2.29 Section : Property Details
+    2.30 Section : Contact Address
+    2.31 Section : Get In Touch
+    2.32 Section : Map
+    2.33 Section : Footer
+3. Mediaquery
+*/
+/* button styles */
+/** --- Global Style Starts ---- **/
+/*-------------------------------------------------------------------------------
+  1. Global | 1.1 Body
+-------------------------------------------------------------------------------*/
+body {
+  overflow: hidden;
+}
+
+body.loaded {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+.subHeader {
+  /*background: -webkit-linear-gradient(rgb(252, 253, 255), rgb(148, 157, 169));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  -webkit-text-stroke-width: .1px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  text-shadow:2px 2px 2px rgba(0, 0, 0, 0.865);
+  }
+
+.mainHeader {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  -webkit-text-stroke-width: 1px;
+  text-shadow:5px 5px 5px rgb(0, 2, 15); 
+}
+
+.float-none {
+  float: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.ourGuaranteesPic {
+  width: 100%;
+  height: 430px;
+  margin-top: 80px; 
+
+}
+
+
+
+/*-------------------------------------------------------------------------------
+  1. Global | 1.2 Buttons
+-------------------------------------------------------------------------------*/
+.btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 26px;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  border-radius: 0px;
+}
+
+.review,
+.social-icons,
+.fab  {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btnhover, .btn:focus, .btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.btn-default {
+  background:white;
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  font-size:medium;
+}
+/**--------------------------------------nav bar button hover color-----------------**/
+.btn.btn-default:hover, .btn.btn-default:focus {
+  background: rgb(70, 128, 236);
+  border: 1px solid white;
+  color: #ffffff;
+  
+}
+
+.btn.btn-primary {
+  background:rgb(70, 128, 236);
+  
+  color: #fff;
+}
+
+.btn.btn-primary span {
+  position: absolute;
+  z-index: -1;
+  right: 100%;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  opacity: 0;
+  border-radius: 25px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background: #093c70;
+  color: #fff;
+}
+
+.btn.btn-secondary {
+  background: #424242;
+  border: 1px solid #424242;
+  color: #fff;
+}
+
+.btn.btn-secondary:hover, .btn.btn-secondary:focus {
+  background: #FFFFFF;
+  color: #fff;
+  border: 1px solid #FFFFFF;
+}
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover {
+  color: #337ab7;
+  border: 1px solid #FFFFFF;
+}
+
+.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*-------------------------------------------------------------------------------
+  1. Global | 1.3 Typography
+-------------------------------------------------------------------------------*/
+.no-l-padding {
+  padding-left: 0px;
+}
+
+.no-r-padding {
+  padding-right: 0px;
+}
+
+.no-t-padding {
+  padding-top: 0px;
+}
+
+.no-b-padding {
+  padding-bottom: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+ul li a {
+  display: inline-block;
+}
+
+figure {
+  margin-bottom: 0px;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.owl-carousel .owl-item img {
+  width: 100%;
+}
+
+.form-control,
+textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.content-justify {
+  -ms-flex-pack: center !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 120px 0 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span, body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin: 0px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #777777;
+  margin: 0px;
+}
+
+p.secondary-font {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+}
+
+.top-head h4 {
+  text-align: center;
+  color: #093c70;
+  font-size: 52px;
+  margin-bottom: 49px;
+  line-height: 24px;
+}
+
+/*-------------------------------------------------------------------------------
+  1. Global | 1.4 Loader
+-------------------------------------------------------------------------------*/
+#page-preloader {
+  background: #fff;
+  z-index: 100500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#page-preloader .loader-ring, #page-preloader .loader-ring2 {
+  border: 60px solid #337ab7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#page-preloader .loader-ring {
+  -webkit-animation: pulsate 1.6s linear infinite;
+  -moz-animation: pulsate 1.6s linear infinite;
+  -ms-animation: pulsate 1.6s linear infinite;
+  animation: pulsate 1.6s linear infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#page-preloader .loader-ring2 {
+  -webkit-animation: pulsate2 1.6s linear infinite;
+  -moz-animation: pulsate2 1.6s linear infinite;
+  -ms-animation: pulsate2 1.6s linear infinite;
+  animation: pulsate2 1.6s linear infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: -.8s;
+  -moz-animation-delay: -.8s;
+  -ms-animation-delay: -.8s;
+  animation-delay: -.8s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@-moz-keyframes pulsate {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@-ms-keyframes pulsate {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@-webkit-keyframes pulsate2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@-moz-keyframes pulsate2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@-ms-keyframes pulsate2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+@keyframes pulsate2 {
+  0% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+/*-------------------------------------------------------------------------------
+  1. Global | 1.5 Logo
+-------------------------------------------------------------------------------*/
+.logo-image a {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.logo-image a img {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.logo-image a span {
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/** --- Global Sections ---- **/
+/* -------------------------------------
+2 Global Sections - Header | 2.1 Header
+---------------------------------------- */
+.header .top-container {
+  background: #fff;
+  z-index: 2;
+}
+/**-------------------------------------nav background--------------------------**/
+.header .top-container .top-menu {
+  background: #093c70;
+  padding: 10px 0px 5px;
+}
+
+.header .top-container .top-menu h6 {
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  margin: 0px;
+  line-height: 24px;
+}
+
+.header .top-container .top-menu p {
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+  text-align: right;
+  margin: 0px;
+}
+
+.header .top-container .top-menu p span {
+  color: white;
+  font-size: 15px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.header .top-container .top-menu p span i.fa-phone {
+  -webkit-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+.header .top-container .top-menu p a {
+  color:white;
+  font-size: 15px;
+}
+
+.header .top-container .top-menu p a:hover {
+  color: #337ab7;
+}
+
+.header .top-container .middle-menu {
+  padding: 21px 0px 26px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info {
+  float: right;
+  margin-top: 15px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info span {
+  float: left;
+  margin-top: 4px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info span img {
+  border: 2px solid #000;
+  padding: 7px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info .menu-contact {
+  display: block;
+  padding-left: 54px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info .menu-contact h5 {
+  margin-bottom: 4px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info .menu-contact a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #888888;
+  display: block;
+  letter-spacing: 0.1px;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info .menu-contact a:hover {
+  color: #337AB7;
+}
+
+.header .top-container .middle-menu .middle-menu-contact-info .menu-contact p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #888888;
+  display: block;
+  letter-spacing: 0.1px;
+}
+
+.header .top-container .navbar-primary {
+  min-height: 70px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation {
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  background-color: #22355b;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar {
+  width: 100%;
+  padding: 0px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-toggler {
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-toggler .navbar-toggler-icon {
+  height: 1.11em;
+  width: 1em;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li {
+  margin-right: 5px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+  padding: 22px 20px;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:hover a,
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.active a {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:first-child a {
+  padding-left: 0px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show > a {
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+  border: none;
+  background-color: #152d5f;
+  margin-top: 0px;
+  border-radius: 0px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li {
+  margin-right: 0px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li a {
+  padding: 10px 10px 10px 10px;
+  color: #FFFFFF;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li:hover > a, .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.active > a {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.dropdown > a span {
+  display: none;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.dropdown > a::after {
+  border-color: transparent transparent transparent #333;
+  border-left-color: #333333;
+  border-left-color: #333333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: 8px;
+  margin-top: -16px;
+  width: 0;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.dropdown > a:hover::after {
+  border-left-color: #FFFFFF;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.dropdown:hover .dropdown-menu {
+  display: block;
+  left: 163px;
+  top: 6px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin {
+  text-align: right;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin p a {
+  font-size: 15px;
+  color: #FFFFFF;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin p a.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin p a.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .signin p a:hover {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .create-list .btn-default {
+  padding: 9px 29px;
+  letter-spacing: 0.4px;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .create-list .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+  border: 1px solid #FFFFFF;
+}
+
+.header .top-container .navbar-primary .sticky_navigation .navbar .create-list .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.header .top-container .navbar-primary.secondary-menu {
+  min-height: 87px;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation {
+  background-color: #FFFFFF;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .logo-image a {
+  margin-top: 0px;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav {
+  margin-left: auto;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li {
+  margin-right: 0px;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+  color: #000;
+  padding: 43px 15px;
+  line-height: 24px;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:hover a, .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.active a {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li a {
+  color: #000000;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li:hover a, .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li.active a {
+  color: #337ab7;
+}
+
+.header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .signin p a {
+  padding: 8px 26px;
+}
+
+.dropdown-toggle::after {
+  vertical-align: middle;
+}
+
+.loaded.modal-open {
+  padding-right: 0px !important;
+}
+
+.nav-icons {
+  padding-bottom: 2px;
+  align-items: left;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+  
+ 
+ }
+
+ .nav-address {
+  margin-left: 155px;
+  padding-right: 140px;
+  padding-top: 3px;
+  width: 90%;
+  margin-top: 0px;
+
+ }
+
+ .nav-call {
+  margin-left: 190px;
+  margin-top: 0px;
+  padding-top: 3px;
+  width: 100%;
+  
+  
+ }
+
+/* -------------------------------------
+2 Global Sections - 2.2 Home Page | 2.2.1 Home Page Banner
+---------------------------------------- */
+
+.home-page-v1-banner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.home-page-v1-banner img {
+  position: absolute;
+  width: 100%;
+}
+
+.home-page-v1-banner .image-caption {
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-top: 220px;
+}
+
+.home-page-v1-banner .image-caption h1 {
+  font-size: 38px;
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 23px;
+}
+
+.home-page-v1-banner .image-caption h5 {
+  font-size: 19px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.home-page-v1-banner .image-caption form .form-group .form-control,
+.home-page-v1-banner .image-caption form .input-group .form-control {
+  border-radius: 0px;
+  height: 72px;
+  padding-top: 20px;
+}
+
+.home-page-v1-banner .image-caption form .form-group .form-control:focus,
+.home-page-v1-banner .image-caption form .input-group .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.home-page-v1-banner .image-caption form .form-group select::-ms-expand,
+.home-page-v1-banner .image-caption form .input-group select::-ms-expand {
+  display: none;
+}
+
+.home-page-v1-banner .image-caption form .form-group select,
+.home-page-v1-banner .image-caption form .input-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+  border-right: 0px;
+}
+
+.home-page-v1-banner .image-caption form .form-group .btn-default,
+.home-page-v1-banner .image-caption form .input-group .btn-default {
+  padding: 15px 41px;
+  border-radius: 0px;
+  line-height: 20px;
+}
+
+.home-page-v1-banner .image-caption form .form-group label,
+.home-page-v1-banner .image-caption form .input-group label {
+  position: absolute;
+  margin-bottom: 12px;
+  left: 0;
+  padding-left: 21px;
+  padding-top: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #777777;
+}
+
+.home-page-v1-banner .image-caption form .form-group::after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  content: "\f107";
+  font-style: normal;
+  text-decoration: inherit;
+  color: #222222;
+  right: 28px;
+  top: 20px;
+  height: 34px;
+  padding: 15px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.home-page-v1-banner .image-caption form .input-group .form-control {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #777777;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 5px;
+}
+
+.home-page-v1-banner .image-caption form .input-group::after {
+  display: none;
+}
+
+.home-page-v1-banner.v3-banner .image-caption {
+  padding-top: 185px;
+}
+
+.home-page-v1-banner.v3-banner .image-caption h1 {
+  font-size: 60px;
+  line-height: 65px;
+  margin-bottom: 28px;
+}
+
+.home-page-v1-banner.v3-banner .image-caption .btn-default {
+  border-radius: 3px;
+  line-height: 24px;
+  padding: 11px 33px;
+}
+
+.home-page-v1-banner.v3-banner .image-caption .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+  border: 1px solid #FFFFFF;
+}
+
+.home-page-v1-banner.v3-banner .image-caption .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.2 Home Page | 2.2.2 Thumbnail Slider
+---------------------------------------- */
+.hacre-carousel {
+  margin-bottom: 25px;
+}
+
+.hacre-carousel .carousel-inner {
+  margin-bottom: 15px;
+}
+.carousel-inner {
+  padding-right: 100px;
+}
+
+.hacre-carousel .house-status {
+  position: absolute;
+  top: 10px;
+  padding-top: 11px;
+  left: 20px;
+}
+
+.hacre-carousel .house-status span {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 13px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.hacre-carousel .house-status span.rent {
+  opacity: 0.6;
+}
+
+.hacre-carousel .house-status span.featured {
+  background: #e03434;
+}
+
+.hacre-carousel .link-btns {
+  position: absolute;
+  top: 477px;
+  padding-left: 20px;
+}
+
+.hacre-carousel .link-btns ul li {
+  display: inline-block;
+ 
+}
+
+.hacre-carousel .link-btns ul li a i {
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  margin-right: 5px;
+  font-size: 17.6px;
+  border-radius: 3px;
+}
+
+.hacre-carousel .link-btns ul li a:hover i {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 11px;
+}
+
+.hacre-carousel .carousel-indicators {
+  position: static;
+  left: initial;
+  width: 100%;
+  margin-left: initial;
+  margin-bottom: 0px;
+}
+
+.hacre-carousel .carousel-indicators > li {
+  width: 100%;
+  height: auto;
+  text-indent: initial;
+  margin-right: 0px;
+}
+
+.hacre-carousel .carousel-indicators > li a {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hacre-carousel .carousel-indicators > li a img {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hacre-carousel .carousel-indicators > li a:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hacre-carousel .carousel-indicators > li.active img {
+  opacity: 0.7;
+}
+
+.hacre-carousel .carousel-indicators.list-inline {
+  white-space: nowrap;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.3 New House Listing
+---------------------------------------- */
+.house-listing {
+  padding: 118px 0 80px;
+}
+
+.house-listing .house-wrapper .house-list {
+  border: 1px solid #e2e2e2;
+  margin-bottom: 40px;
+}
+
+.house-listing .house-wrapper .house-list figure {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0px;
+  left: 0px;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 10px;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul li {
+  display: inline-block;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul li a i {
+  padding: 8px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  margin-right: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul li a i.fa-plus {
+  padding: 8px 9px;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul li a:hover i {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 7px 7px;
+}
+
+.house-listing .house-wrapper .house-list figure figcaption ul li a:hover i.fa-plus {
+  padding: 7px 8px;
+}
+
+.house-listing .house-wrapper .house-list .house-status {
+  position: absolute;
+  right: 34px;
+  padding-top: 15px;
+  z-index: 1;
+}
+
+.house-listing .house-wrapper .house-list .house-status span {
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2px 7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.house-listing .house-wrapper .house-list .house-status span.featured {
+  background: #e03434;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info {
+  display: inline-block;
+  padding: 0px 10px 14px 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info p {
+  display: inline-block;
+  background: #337ab7;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info h4 {
+  text-align: left;
+  font-size: 21px;
+  margin-bottom: 3px;
+  color: #111111;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info h4 a {
+  color: #111111;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info h4 a:hover {
+  color: #337ab7;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info span i {
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info ul {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info ul li {
+  display: inline-block;
+  
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-info ul li:last-child {
+  display: none;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info {
+  padding: 13px 10px 15px 19px;
+  border-bottom: 4px solid #e5e5f8;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info img {
+  margin-right: 10px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info span {
+  font-weight: 300;
+  color: #111111;
+  font-size: 14px;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info span a {
+  color: #111111;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info span a:hover {
+  color: #337ab7;
+}
+
+.house-listing .house-wrapper .house-list .list-details .house-holder-info p {
+  float: right;
+  font-size: 12px;
+  color: #9b9b9b;
+  padding-top: 6px;
+  line-height: 24px;
+}
+
+.house-listing .house-wrapper .house-list:hover::after {
+  width: 92%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.house-listing .house-wrapper .house-list:hover figure figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.house-listing .house-wrapper .house-list::after {
+  content: '';
+  background: #337ab7;
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  bottom: 41px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-info {
+  padding-bottom: 0px;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-info span {
+  font-size: 15px;
+  color: #555555;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-info ul li {
+  padding-right: 50px;
+  padding-bottom: 15px;
+  color: #333333;
+  font-size: 13px;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-info ul li:nth-child(3) {
+  padding-right: 38px;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-info ul li:last-child {
+  display: block;
+}
+
+.house-listing.v2-listing .house-wrapper .list-details .house-holder-info span {
+  font-weight: 300;
+}
+
+.house-listing .listing-pagination {
+  margin-bottom: 40px;
+}
+
+.listing-pagination {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+
+.listing-pagination ul .page-item {
+  margin-right: 10px;
+}
+
+.listing-pagination ul .page-item .page-link {
+  color: #777777;
+  font-size: 14px;
+  border-radius: 0px;
+  padding: 11px 15px;
+}
+
+.listing-pagination ul .page-item:first-child a {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.listing-pagination ul .page-item:last-child a {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.listing-pagination ul .page-item.active .page-link, .listing-pagination ul .page-item:hover .page-link {
+  border: 1px solid #337ab7;
+  color: #337ab7;
+  background: transparent;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.4 Properties Sale & Rent
+---------------------------------------- */
+.rent-sale-listing {
+  background: #f6f6f6;
+  padding: 124px 0 103px;
+}
+
+.rent-sale-listing.sale-only {
+  padding-top: 103px;
+  padding-bottom: 120px;
+}
+
+.rent-sale-listing.ver-2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.rent-sale-listing .top-head h4 {
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .image-holder, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .image-holder {
+  overflow: hidden;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .image-holder img, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .image-holder img {
+  position: relative;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure figcaption, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 20px 20px 20px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure figcaption.house-info .price, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure figcaption.house-info .price {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure figcaption.house-info span, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure figcaption.house-info span {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure figcaption.house-info p, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure figcaption.house-info p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .house-status, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .house-status {
+  position: absolute;
+  top: 0px;
+  padding-top: 15px;
+  left: 10px;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%);
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .house-status span, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .house-status span {
+  font-size: 10px;
+  background: #0c2e4f;
+  padding: 2px 7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 1;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns ul li a i, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns ul li a i {
+  padding: 8px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns ul li a i.fa-plus, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns ul li a i.fa-plus {
+  padding: 8px 9px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns ul li a:hover i, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns ul li a:hover i {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 7px 7px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns ul li a:hover i.fa-plus, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns ul li a:hover i.fa-plus {
+  padding: 7px 8px;
+}
+
+.rent-sale-listing .rent-carousel .owl-item .rent-sale-list figure .link-btns.btn-transform, .rent-sale-listing .sale-carousel .owl-item .rent-sale-list figure .link-btns.btn-transform {
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: translateX(180%);
+  -ms-transform: translateX(180%);
+  transform: translateX(180%);
+}
+
+.rent-sale-listing .rent-carousel .owl-item:hover figure figcaption, .rent-sale-listing .sale-carousel .owl-item:hover figure figcaption {
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+}
+
+.rent-sale-listing .rent-carousel .owl-item:hover figure .house-status, .rent-sale-listing .sale-carousel .owl-item:hover figure .house-status {
+  -webkit-transform: translateX(-75px);
+  -ms-transform: translateX(-75px);
+  transform: translateX(-75px);
+}
+
+.rent-sale-listing .rent-carousel .owl-item:hover figure .link-btns.btn-transform, .rent-sale-listing .sale-carousel .owl-item:hover figure .link-btns.btn-transform {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+.rent-sale-listing .rent-carousel .owl-nav, .rent-sale-listing .sale-carousel .owl-nav {
+  margin-top: 0px;
+}
+
+.rent-sale-listing .rent-carousel .owl-nav .owl-next, .rent-sale-listing .rent-carousel .owl-nav .owl-prev, .rent-sale-listing .sale-carousel .owl-nav .owl-next, .rent-sale-listing .sale-carousel .owl-nav .owl-prev {
+  position: absolute;
+  right: 0;
+  top: -69px;
+  background: transparent;
+  border: 1px solid #c8c8c8;
+  padding: 5px 12px;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+.rent-sale-listing .rent-carousel .owl-nav .owl-next i, .rent-sale-listing .rent-carousel .owl-nav .owl-prev i, .rent-sale-listing .sale-carousel .owl-nav .owl-next i, .rent-sale-listing .sale-carousel .owl-nav .owl-prev i {
+  color: #666666;
+  font-size: 15px;
+}
+
+.rent-sale-listing .rent-carousel .owl-nav .owl-next:hover, .rent-sale-listing .rent-carousel .owl-nav .owl-prev:hover, .rent-sale-listing .sale-carousel .owl-nav .owl-next:hover, .rent-sale-listing .sale-carousel .owl-nav .owl-prev:hover {
+  border-color: #337ab7;
+}
+
+.rent-sale-listing .rent-carousel .owl-nav .owl-next:hover i, .rent-sale-listing .rent-carousel .owl-nav .owl-prev:hover i, .rent-sale-listing .sale-carousel .owl-nav .owl-next:hover i, .rent-sale-listing .sale-carousel .owl-nav .owl-prev:hover i {
+  color: #337ab7;
+}
+
+.rent-sale-listing .rent-carousel .owl-nav .owl-prev, .rent-sale-listing .sale-carousel .owl-nav .owl-prev {
+  right: 40px;
+}
+
+.rent-sale-listing .rent-carousel .owl-dots, .rent-sale-listing .sale-carousel .owl-dots {
+  display: none;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.5 Find Neighbor
+---------------------------------------- */
+.find-neighbor {
+  background-image: url("../images/find-neighbour-bgclr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+
+.find-neighbor .layer {
+  padding: 95px 0px 84px;
+}
+
+.find-neighbor .layer h2 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.find-neighbor .layer p {
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-bottom: 37px;
+  line-height: 26px;
+}
+
+.find-neighbor .layer .input-group {
+  max-width: 78%;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  z-index: 1;
+}
+
+.find-neighbor .layer .input-group .form-control {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 48px;
+}
+
+.find-neighbor .layer .input-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: 300;
+}
+
+.find-neighbor .layer .input-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 300;
+}
+
+.find-neighbor .layer .input-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: 300;
+}
+
+.find-neighbor .layer .input-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 300;
+}
+
+.find-neighbor .layer .input-group .input-group-append .btn-default {
+  font-size: 17px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.find-neighbor.ver-two {
+  background-image: url("../images/find-neighbour-home2-bgclr.png");
+}
+
+.find-neighbor.ver-two .layer h2 {
+  margin-top: 2px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.6 Greater Communities
+---------------------------------------- */
+.great-community .community-list {
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 0px 9px -1px #ccc;
+  box-shadow: 1px 0px 9px -1px #ccc;
+}
+
+.great-community .community-list figure {
+  overflow: hidden;
+  position: relative;
+}
+
+.great-community .community-list figure .image-holder img {
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.great-community .community-list figure .overlay-1 {
+  background-color: rgba(2, 47, 71, 0.12);
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.great-community .community-list .community-logo {
+  position: absolute;
+  top: 131px;
+  left: 35px;
+}
+
+.great-community .community-list .community-logo img {
+  border-radius: 5px;
+}
+
+.great-community .community-list .community-details {
+  padding: 20px 10px 19px 20px;
+}
+
+.great-community .community-list .community-details h4 {
+  color: #111111;
+  margin-bottom: 9px;
+}
+
+.great-community .community-list .community-details p {
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.great-community .community-list .community-details span {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.great-community .community-list:hover figure .image-holder img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.great-community .community-list:hover figure .overlay-1 {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.7 Testimonial
+---------------------------------------- */
+.testimonials {
+  padding: 120px 0px 96px;
+  padding-bottom: 0px;
+}
+
+.testimonials h4 {
+  color: #111111;
+}
+
+.testimonials .testimonial-carousel .owl-item .testi-item img {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 44px;
+}
+
+.testimonials .testimonial-carousel .owl-item .testi-item span {
+  display: block;
+  color: #337ab7;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonial-carousel .owl-item .testi-item p {
+  color: #777777;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  display: inline-block;
+  max-width: 650px;
+}
+
+.testimonials .testimonial-carousel .owl-nav, .testimonials .testimonial-carousel .owl-dots {
+  display: none;
+}
+
+.testimonials.with-bg {
+  background-image: url("../images/testibg-clr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+
+.testimonials.with-bg .layer {
+  padding: 120px 0px 112px;
+}
+
+.testimonials.with-bg .layer h4 {
+  color: #FFFFFF;
+}
+
+.testimonials.with-bg .layer .testimonial-carousel .owl-item .testi-item p {
+  color: #ffffff;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.8 Clients Logo
+---------------------------------------- */
+.clients-logo {
+  padding-bottom: 119px;
+  padding-top: 0;
+  
+}
+
+.clients-logo .clients-logo-carousel .owl-item .logo-item figure .image-holder img {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.clients-logo .clients-logo-carousel .owl-nav, .clients-logo .clients-logo-carousel .owl-dots {
+  display: none;
+}
+
+.clients-logo.with-paady {
+  padding-top: 118px;
+  padding-bottom: 120px;
+}
+
+.clients-logo.with-custom-paady {
+  padding-top: 72px;
+}
+
+.clients-logo {
+  background-color: #FFF;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.9 Property Rent & Sale double scroll
+---------------------------------------- */
+.double-rent-sale-listing {
+  background: #f6f6f6;
+  padding-bottom: 95px;
+  padding-top: 120px;
+}
+
+.double-rent-sale-listing .top-head h4 {
+  text-align: left;
+  margin-bottom: 36px;
+  font-size: 48px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list {
+  padding: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 3px 1px #ccc;
+  box-shadow: 1px 1px 3px 1px #ccc;
+  display: inline-block;
+}
+
+.double-rent-sale-listing .double-rent-sale-list .house-status {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list .house-status span {
+  font-size: 10px;
+  background: #093c70;
+  padding: 3px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.double-rent-sale-listing .double-rent-sale-list .house-status span.rent {
+  opacity: 0.6;
+}
+
+.double-rent-sale-listing .double-rent-sale-list .house-status span.featured {
+  background: #e03434;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure {
+  display: inline-block;
+  
+  overflow: hidden;
+  position: relative;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .image-holder {
+  float: left;
+  overflow: hidden;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .image-holder img {
+  width: auto;
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info {
+  display: flow-root;
+  padding: 13px 13px 0px 28px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info p {
+  display: inline-block;
+  color: #444444;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info h4 {
+  text-align: left;
+  font-size: 23px;
+  margin-bottom: 3px;
+  color: #111111;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info h4 a {
+  color: #111111;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info h4 a:hover {
+  color: #337ab7;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info span i {
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info ul {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info ul li {
+  display: inline-block;
+  
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list figure .house-info .price {
+  font-size: 22px;
+}
+
+.double-rent-sale-listing .double-rent-sale-list:hover figure .image-holder img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-item {
+  padding: 10px;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev {
+  position: absolute;
+  right: 7px;
+  top: -69px;
+  background: transparent;
+  border: 1px solid #c8c8c8;
+  padding: 5px 12px;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next i, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev i {
+  color: #666666;
+  font-size: 15px;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next:hover, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev:hover {
+  border-color: #337ab7;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next:hover i, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev:hover i {
+  color: #337ab7;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev {
+  right: 50px;
+}
+
+.double-rent-sale-listing .double-rent-carousel .owl-dots {
+  display: none;
+}
+
+.double-rent-sale-listing.ver-two {
+  padding: 121px 0px 114px;
+  background: #ffffff;
+}
+
+.double-rent-sale-listing.ver-two .double-rent-sale-list {
+  margin-bottom: 36px;
+}
+
+.double-rent-sale-listing.ver-two .listing-pagination {
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+.double-rent-sale-listing.bg-clr {
+  background: #ffffff;
+  padding-bottom: 92px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.10 Popular Cities
+---------------------------------------- */
+.portfolio {
+  padding-bottom: 90px;
+}
+
+.portfolio .portfolio-grid .grid-item, .portfolio .mas-portfolio .grid-item {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-grid .grid-item figure, .portfolio .mas-portfolio .grid-item figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-grid .grid-item figure .img-holder, .portfolio .mas-portfolio .grid-item figure .img-holder {
+  overflow: hidden;
+}
+
+.portfolio .portfolio-grid .grid-item .count-status, .portfolio .mas-portfolio .grid-item .count-status {
+  position: absolute;
+  left: 20px;
+  padding-top: 19px;
+  z-index: 1;
+}
+
+.portfolio .portfolio-grid .grid-item .count-status span, .portfolio .mas-portfolio .grid-item .count-status span {
+  font-size: 11px;
+  background: #093c70;
+  padding: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-grid .grid-item .count-status span.rent, .portfolio .mas-portfolio .grid-item .count-status span.rent {
+  opacity: 0.6;
+}
+
+.portfolio .portfolio-grid .grid-item .count-status span.featured, .portfolio .mas-portfolio .grid-item .count-status span.featured {
+  background: #e03434;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe, .portfolio .mas-portfolio .grid-item .effect-phoebe {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe img, .portfolio .mas-portfolio .grid-item .effect-phoebe img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe figcaption, .portfolio .mas-portfolio .grid-item .effect-phoebe figcaption {
+  color: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe figcaption h4, .portfolio .mas-portfolio .grid-item .effect-phoebe figcaption h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 24px;
+  padding: 20px 20px;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe figcaption::before, .portfolio .portfolio-grid .grid-item .effect-phoebe figcaption::after, .portfolio .mas-portfolio .grid-item .effect-phoebe figcaption::before, .portfolio .mas-portfolio .grid-item .effect-phoebe figcaption::after {
+  pointer-events: none;
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe:hover img, .portfolio .mas-portfolio .grid-item .effect-phoebe:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe:hover figcaption::before, .portfolio .mas-portfolio .grid-item .effect-phoebe:hover figcaption::before {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.portfolio .portfolio-grid .grid-item .effect-phoebe:hover h4, .portfolio .mas-portfolio .grid-item .effect-phoebe:hover h4 {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.portfolio .portfolio-grid .grid-item:hover figcaption, .portfolio .mas-portfolio .grid-item:hover figcaption {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(254, 246, 246, 0)), color-stop(80%, rgba(0, 0, 0, 0.27)), to(rgba(11, 12, 12, 0.91)));
+  background: -webkit-linear-gradient(top, rgba(254, 246, 246, 0) 70%, rgba(0, 0, 0, 0.27) 80%, rgba(11, 12, 12, 0.91) 100%);
+  background: -o-linear-gradient(top, rgba(254, 246, 246, 0) 70%, rgba(0, 0, 0, 0.27) 80%, rgba(11, 12, 12, 0.91) 100%);
+  background: linear-gradient(to bottom, rgba(254, 246, 246, 0) 70%, rgba(0, 0, 0, 0.27) 80%, rgba(11, 12, 12, 0.91) 100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-grid.mas-portfolio .grid-item .effect-phoebe h4, .portfolio .mas-portfolio.mas-portfolio .grid-item .effect-phoebe h4 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 96px;
+}
+
+.portfolio .portfolio-grid.mas-portfolio .grid-item .effect-phoebe .count-status, .portfolio .mas-portfolio.mas-portfolio .grid-item .effect-phoebe .count-status {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 112px;
+  height: 26px;
+  opacity: 0;
+}
+
+.portfolio .portfolio-grid.mas-portfolio .grid-item .effect-phoebe .count-status span, .portfolio .mas-portfolio.mas-portfolio .grid-item .effect-phoebe .count-status span {
+  background: #337ab7;
+}
+
+.portfolio .portfolio-grid.mas-portfolio .grid-item .effect-phoebe:hover .count-status, .portfolio .mas-portfolio.mas-portfolio .grid-item .effect-phoebe:hover .count-status {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.portfolio .portfolio-grid.mas-portfolio .grid-item:hover figcaption, .portfolio .mas-portfolio.mas-portfolio .grid-item:hover figcaption {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, rgba(254, 246, 246, 0)), color-stop(10%, rgba(0, 0, 0, 0.27)), color-stop(120%, rgba(11, 12, 12, 0.91)));
+  background: -webkit-linear-gradient(top, rgba(254, 246, 246, 0) -10%, rgba(0, 0, 0, 0.27) 10%, rgba(11, 12, 12, 0.91) 120%);
+  background: -o-linear-gradient(top, rgba(254, 246, 246, 0) -10%, rgba(0, 0, 0, 0.27) 10%, rgba(11, 12, 12, 0.91) 120%);
+  background: linear-gradient(to bottom, rgba(254, 246, 246, 0) -10%, rgba(0, 0, 0, 0.27) 10%, rgba(11, 12, 12, 0.91) 120%);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.11 Recent News
+---------------------------------------- */
+.recent-news {
+  padding-bottom: 79px;
+  padding-top: 119px;
+}
+
+.recent-news .news-item {
+  background: #f7f7f7;
+  margin-bottom: 40px;
+}
+
+.recent-news .news-item .householder-status {
+  position: absolute;
+  left: 40px;
+  top: 180px;
+}
+
+.recent-news .news-item .householder-status span {
+  font-size: 12px;
+  background: #337ab7;
+  padding: 8px 13px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.recent-news .news-item .householder-status span.rent {
+  opacity: 0.6;
+}
+
+.recent-news .news-item .householder-status span.featured {
+  background: #e03434;
+}
+
+.recent-news .news-item .news-details .news-name {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.recent-news .news-item .news-details .news-name h5 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #111111;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 23px;
+}
+
+.recent-news .news-item .news-details .news-name h5 a {
+  color: #111111;
+}
+
+.recent-news .news-item .news-details .news-name h5 a:hover {
+  color: #337ab7;
+}
+
+.recent-news .news-item .news-details .news-name p {
+  font-size: 15px;
+  line-height: 26px;
+  color: #444444;
+  margin-bottom: 21px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.recent-news .news-item .news-details .news-date {
+  padding: 12px 20px 12px 20px;
+}
+
+.recent-news .news-item .news-details .news-date span {
+  font-size: 14px;
+  line-height: 26px;
+  color: #111111;
+  margin-top: 10px;
+}
+
+.recent-news .news-item .news-details .news-date span a {
+  color: #111111;
+}
+
+.recent-news .news-item .news-details .news-date span a:hover {
+  color: #337ab7;
+}
+
+.recent-news .news-item figure {
+  overflow: hidden;
+  position: relative;
+}
+
+.recent-news .news-item figure .image-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.recent-news .news-item figure .image-holder img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.recent-news .news-item:hover figure .image-holder img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.recent-news .news-item.no-image {
+  background: transparent;
+  margin-bottom: 30px;
+}
+
+.recent-news .news-item.no-image .householder-status {
+  position: relative;
+  left: 0;
+  top: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.recent-news .news-item.no-image .news-details .news-name h5 {
+  padding-top: 7px;
+  padding-left: 10px;
+}
+
+.recent-news .news-item.no-image .news-details .news-name p {
+  padding-left: 10px;
+  margin-bottom: 13px;
+}
+
+.recent-news .news-item.no-image .news-details .news-date {
+  padding-left: 10px;
+}
+
+.recent-news .listing-pagination {
+  margin-bottom: 41px;
+  margin-top: 20px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.12 Property Search Form
+---------------------------------------- */
+.property-search-form {
+  background: #f8f8f8;
+  padding: 49px 0px 43px;
+}
+
+.property-search-form form .form-group .form-control {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  height: 44px;
+  color: #444444;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  border: 1px solid #dddddd;
+}
+
+.property-search-form form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.property-search-form form .form-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 16px;
+}
+
+.property-search-form form .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 16px;
+}
+
+.property-search-form form .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 16px;
+}
+
+.property-search-form form .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 16px;
+}
+
+.property-search-form form .form-group::after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  content: "\f107";
+  font-style: normal;
+  text-decoration: inherit;
+  color: #222222;
+  right: 28px;
+  top: -2px;
+  height: 34px;
+  padding: 15px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.property-search-form form .form-group select::-ms-expand {
+  display: none;
+}
+
+.property-search-form form .form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+.property-search-form form .other-features {
+  margin-top: 18px;
+}
+
+.property-search-form form .other-features a {
+  color: #093c70;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.property-search-form form .other-features a i {
+  font-size: 15px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.property-search-form form .input-group {
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.property-search-form form .input-group .btn-default {
+  padding: 12px 35px;
+  border-radius: 3px;
+}
+
+.property-search-form form .input-group .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+  border: 1px solid #337ab7;
+}
+
+.property-search-form form .input-group .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.13 Promo Box
+---------------------------------------- */
+.video-promo-box {
+  background-image: url("../images/home-3-sec-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+
+.video-promo-box .layer {
+  padding: 130px 0px 138px;
+}
+
+.video-promo-box .layer .promo-icon {
+  padding-top: 60px;
+}
+
+.video-promo-box .layer .promo-icon a i {
+  font-size: 18px;
+  color: #111111;
+  background: #ffffff;
+  border-radius: 100%;
+  padding: 25px 25px 25px 28px;
+}
+
+.video-promo-box .layer .promo-text  {
+  font-size: 37px;
+  line-height: 47px;
+  color: #ffffff;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.video-promo-box .layer .promo-text p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.video-promo-box .layer .promo-text span {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.video-promo-box.download-free-app {
+  background-image: url("../images/home-3-google-app-bg-whtclr.png");
+}
+
+.video-promo-box.download-free-app .layer {
+  padding: 101px 0px 1px;
+}
+
+.video-promo-box.download-free-app .layer .app-info {
+  padding-top: 84px;
+  padding-left: 69px;
+}
+
+.video-promo-box.download-free-app .layer .app-info h4 {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+
+.video-promo-box.download-free-app .layer .app-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+.video-promo-box.download-free-app .layer .app-info img {
+  margin-right: 10px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.14 Discover What You Want
+---------------------------------------- */
+.what-you-want {
+  background: #f6f6f6;
+  
+}
+
+.what-you-want .house-types {
+  background: #ffffff;
+  padding: 30px 20px 30px 20px;
+  -webkit-box-shadow: 1px 1px 9px -2px #ccc;
+  box-shadow: 1px 1px 9px -2px #ccc;
+}
+
+.what-you-want .house-types img {
+  background: #337ab7;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.what-you-want .house-types h4 {
+  color: #111111;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+.what-you-want .house-types p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 6px;
+  line-height: 24px;
+}
+
+.what-you-want .house-types a {
+  color: #337ab7;
+  font-size: 12px;
+}
+
+.what-you-want .house-types:hover a {
+  color: #111111;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.15 Discover What You Want
+---------------------------------------- */
+
+.fas:hover {
+  color: #337ab7 !important;
+
+}
+.preferred-choice {
+  padding: 119px 0px 115px;
+}
+
+.preferred-choice .choice-list img {
+  margin-bottom: 14px;
+  height: 39px;
+}
+
+.preferred-choice .choice-list h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.preferred-choice .choice-list p {
+  font-weight: 500;
+  color: #777777;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.preferred-choice .choice-list a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.16 About Experience
+---------------------------------------- */
+.about-experience {
+  background: #f6f6f6;
+  padding: 121px 0px 96px;
+}
+
+.about-experience .experience-info {
+  padding-left: 10px;
+}
+
+.about-experience .experience-info h4 {
+  font-size: 28px;
+  line-height: 24px;
+  color: #111111;
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+
+.about-experience .experience-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #777777;
+}
+
+.about-experience .experience-info p.bold {
+  color: #333;
+  margin-bottom: 14px;
+}
+
+.about-experience .experience-info .btn-default {
+  margin-top: 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 9px 29px;
+}
+
+.about-experience .experience-info .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.about-experience .experience-info .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.17 Great Agents
+---------------------------------------- */
+.great-agents {
+  padding: 119px 0px 120px;
+}
+
+.great-agents .agents-list h4 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #111111;
+  margin-top: 35px;
+  margin-bottom: 7px;
+}
+
+.great-agents .agents-list span {
+  font-size: 15px;
+  line-height: 26px;
+  color: #337ab7;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.great-agents .agents-list ul li {
+  display: inline-block;
+  
+}
+
+.great-agents .agents-list ul li a {
+  color: #fff;
+  width: 41px;
+  height: 40px;
+  background: #dddddd;
+  text-align: center;
+  padding-top: 6px;
+  margin-right: 5px;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+}
+
+.great-agents .agents-list ul li a:hover {
+  color: #337ab7;
+  background: transparent;
+  border-color: #337ab7;
+}
+
+.great-agents .agents-list.v2-agents-list {
+  border: 3px solid #e5e5f8;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail img {
+  display: block;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line {
+  display: initial;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line::after, .great-agents .agents-list.v2-agents-list .thumbnail .line::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 100%;
+  background: #fff;
+  bottom: 10px;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line::before {
+  display: inline-block;
+  left: -47%;
+  -webkit-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  transform: rotate(8deg);
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line::after {
+  display: inline-block;
+  right: -50%;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line > span::after, .great-agents .agents-list.v2-agents-list .thumbnail .line > span::before {
+  position: absolute;
+  bottom: 47px;
+  width: 51%;
+  height: 5px;
+  background: #337ab7;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  content: '';
+  z-index: 1;
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line > span::before {
+  left: 0;
+  -webkit-transform: rotate(-8.5deg) scale(0.6);
+  -moz-transform: rotate(-8.5deg) scale(0.6);
+  -ms-transform: rotate(-8.5deg) scale(0.6);
+  transform: rotate(-8.5deg) scale(0.6);
+}
+
+.great-agents .agents-list.v2-agents-list .thumbnail .line > span::after {
+  right: 0;
+  -webkit-transform: rotate(8.5deg) scale(0.6);
+  -moz-transform: rotate(8.5deg) scale(0.6);
+  -ms-transform: rotate(8.5deg) scale(0.6);
+  transform: rotate(8.5deg) scale(0.6);
+}
+
+.great-agents .agents-list.v2-agents-list .content {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  background: #fff;
+  text-align: center;
+  padding: 0px 25px 0;
+}
+
+.great-agents .agents-list.v2-agents-list .content h4 {
+  margin-top: 0px;
+}
+
+.great-agents .agents-list.v2-agents-list .content .agent-social {
+  display: inline-block;
+  visibility: hidden;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  
+}
+
+.great-agents .agents-list.v2-agents-list .content .agent-social li a {
+  margin-right: 7px;
+}
+
+.great-agents .agents-list.v2-agents-list:hover {
+  border: 3px solid #337ab7;
+}
+
+.great-agents .agents-list.v2-agents-list:hover .thumbnail .line::before {
+  right: -47%;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.great-agents .agents-list.v2-agents-list:hover .thumbnail .line::after {
+  right: -47%;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -webkit-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+
+.great-agents .agents-list.v2-agents-list:hover .thumbnail .line > span::before {
+  -webkit-transform: rotate(-8.5deg) scale(1);
+  -ms-transform: rotate(-8.5deg) scale(1);
+  transform: rotate(-8.5deg) scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all .2s ease .2s;
+  -o-transition: all .2s ease .2s;
+  transition: all .2s ease .2s;
+}
+
+.great-agents .agents-list.v2-agents-list:hover .thumbnail .line > span::after {
+  -webkit-transform: rotate(8.5deg) scale(1);
+  -ms-transform: rotate(8.5deg) scale(1);
+  transform: rotate(8.5deg) scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all .2s ease .2s;
+  -o-transition: all .2s ease .2s;
+  transition: all .2s ease .2s;
+}
+
+.great-agents .agents-list.v2-agents-list:hover .content {
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.great-agents .agents-list.v2-agents-list:hover .content .agent-social {
+  margin-top: 0px;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.great-agents.with-bg-clr {
+  background: #fafafa;
+}
+
+.great-agents.with-bg-clr .v2-agents-list {
+  background: #ffffff;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.18 Services
+---------------------------------------- */
+.services {
+  padding-bottom: 52px;
+}
+
+.services .service-list {
+  margin-bottom: 60px;
+}
+
+.services .service-list figure {
+  overflow: hidden;
+  position: relative;
+}
+
+.services .service-list figure .image-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.services .service-list figure .image-holder img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.services .service-list:hover figure .image-holder img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.services .service-list h4 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #111111;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.services .service-list p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.services .service-list a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.services .service-list a.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+.services .service-list a.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin-left: 10px;
+}
+
+.services .service-list a.hvr-icon-forward:hover .hvr-icon, .services .service-list a.hvr-icon-forward:focus .hvr-icon {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.19 Pricing Table
+---------------------------------------- */
+.pricing-table {
+  padding: 120px 0px 120px;
+}
+
+.pricing-table .pricing-table-list {
+  background-color: #093c70;
+  padding: 70px 0px 70px;
+}
+
+.pricing-table .pricing-table-list h1 {
+  font-weight: 700;
+  font-size: 55px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.pricing-table .pricing-table-list h1 sup {
+  font-size: xx-large;
+}
+
+.pricing-table .pricing-table-list h5 {
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-bottom: 27px;
+}
+
+.pricing-table .pricing-table-list ul li {
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 7px 0px 8px;
+}
+
+.pricing-table .pricing-table-list ul li:last-child {
+  padding-bottom: 0px;
+}
+
+.pricing-table .pricing-table-list ul li:first-child {
+  padding-top: 0px;
+}
+
+.pricing-table .pricing-table-list .btn-default {
+  margin-top: 44px;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 10px 33px;
+}
+
+.pricing-table .pricing-table-list .btn-default:hover {
+  border-color: white;
+  background: transparent;
+}
+
+.pricing-table .pricing-table-list.active, .pricing-table .pricing-table-list:hover {
+  background-image: url("../images/cityofriverside2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+
+.pricing-table .pricing-table-list.active .layer, .pricing-table .pricing-table-list:hover .layer {
+  background-color: #337ab7;
+  padding: 70px 0px 70px;
+}
+
+.pricing-table .pricing-table-list.active .btn-default, .pricing-table .pricing-table-list:hover .btn-default {
+  background: white;
+}
+
+.pricing-table .pricing-table-list.active .btn-default:hover, .pricing-table .pricing-table-list:hover .btn-default:hover {
+  background: transparent;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.20 Sub Page Banner
+---------------------------------------- */
+.sub-page-banner {
+ 
+  background-repeat: repeat;
+  background-size: cover;  
+  height: 400px;
+  width: 100%;
+  background-image: url('../images/drakes.jpeg');
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sub-page-banner .layer {
+  padding: 113px 0 113px;
+}
+
+.sub-page-banner .layer h1 {
+  font-size: 45px;
+  color:white;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.21 All Agents & Agency
+---------------------------------------- */
+.all-agents {
+  padding: 120px 0px 90px;
+}
+
+.all-agents .house-listing {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.all-agents .house-listing .top-head h4 {
+  text-align: left;
+  color:  #093c70;
+  font-size: 44px;
+  margin-bottom: 27px;
+}
+
+.all-agents .house-listing .house-wrapper .house-list .list-details .house-holder-info {
+  padding: 16px 10px 20px 19px;
+}
+
+.all-agents .house-listing .house-wrapper .house-list .list-details .house-holder-info img {
+  display: none;
+}
+
+.all-agents .house-listing .house-wrapper .house-list .list-details .house-holder-info p {
+  padding-top: 2px;
+}
+
+.agency-agents-item {
+  border: 1px solid #d5d5d5;
+  padding: 30px 30px 27px 30px;
+  margin-bottom: 30px;
+}
+
+.agency-agents-item img {
+ 
+  display: inline-block;
+}
+
+.agency-agents-item .agency-agents-name {
+  display: block;
+  padding-left: 132px;
+  padding-bottom: 24px;
+}
+
+.agency-agents-item .agency-agents-name ul {
+  display: inline-block;
+}
+
+.agency-agents-item .agency-agents-name ul li {
+  display: inline-block;
+  
+}
+
+.agency-agents-item .agency-agents-name ul li a i {
+  width: 31px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  background: #cfcfcf;
+  margin-right: 5px;
+  padding: 8px 5px 5px 8px;
+  font-size: 14px;
+}
+
+.agency-agents-item .agency-agents-name ul li a:hover i {
+  background: #337ab7;
+}
+
+.agency-agents-item .agency-agents-name ul li:last-child a {
+  margin-right: 0px;
+}
+
+.agency-agents-item .agency-agents-name h4 {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.agency-agents-item .agency-agents-name h4 a {
+  font-size: 22px;
+  color: #111111;
+}
+
+.agency-agents-item .agency-agents-name h4 a:hover {
+  color: #337ab7;
+}
+
+.agency-agents-item .agency-agents-name span {
+  font-weight: 300;
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.agency-agents-item p {
+  display: inline-block;
+  font-weight: 500;
+  color: #111111;
+  font-size: 15px;
+  margin-bottom: 11px;
+  margin-top: 10px;
+}
+
+.agency-agents-item ul li span {
+  display: inline-block;
+  
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.agency-agents-item ul li p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.agency-agents-item ul li p a {
+  color: #666666;
+  vertical-align: middle;
+}
+
+.agency-agents-item ul li p a:hover {
+  color: #337ab7;
+}
+
+.agency-agents-item .btn-default {
+  border-radius: 3px;
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 8px 36px;
+}
+
+.agency-agents-item .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.agency-agents-item .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.agency-agents-item.agentdetails {
+  display: flow-root;
+}
+
+.agency-agents-item.agentdetails img {
+  margin-right: 31px;
+}
+
+.agency-agents-item.agentdetails .agency-agents-name {
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.agency-agents-item.agentdetails .agency-agents-name ul {
+  float: right;
+}
+
+.agency-agents-item.agentdetails .agency-agents-name .name {
+  display: inline-block;
+}
+
+.agency-agents-item.agentdetails ul li span img {
+  margin-right: 0px;
+}
+
+.agency-agents-item.agentdetails ul li p {
+  margin-bottom: 13px;
+}
+
+.agency-agents-item.agentdetails p {
+  margin-bottom: 8px;
+  display: block;
+  margin-top: 0px;
+}
+
+.agency-agents-item.agentdetails .btn-default {
+  padding: 8px 44px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.22 Filter Sidebar
+---------------------------------------- */
+.filter-sidebar {
+  padding-left: 20px;
+}
+
+.filter-sidebar h4 {
+  font-size: 16px;
+  margin-bottom: 17px;
+  color: #111111;
+}
+
+.filter-sidebar ul li {
+  padding-bottom: 7px;
+  color: #337ab7;
+  font-size: 15px;
+}
+
+.filter-sidebar ul li a {
+  color: #337ab7;
+  font-size: 15px;
+}
+
+.filter-sidebar ul li a i {
+  font-size: 13px;
+}
+
+.filter-sidebar ul li a:hover {
+  color: #111111;
+}
+
+.filter-sidebar ul li span {
+  color: #777777;
+  font-size: 13px;
+}
+
+.filter-sidebar ul li:last-child {
+  padding-bottom: 0px;
+}
+
+.filter-sidebar ul li label {
+  margin-bottom: 0px;
+}
+
+.filter-sidebar ul li .check {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-clip: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0px 3px 0 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  background-color: #fff;
+  border: 1px solid #337ab7;
+}
+
+.filter-sidebar ul li .check:checked:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 6px;
+  border: 0 solid #333;
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.filter-sidebar ul li .check:disabled {
+  opacity: 0.65;
+}
+
+.filter-sidebar ul li .check:focus {
+  outline: none;
+}
+
+.filter-sidebar ul li .check:checked {
+  background-color: #fff;
+  border-color: #337ab7;
+}
+
+.filter-sidebar ul li .check:checked:after {
+  border-color: #337ab7;
+}
+
+.filter-sidebar ul li .check-info {
+  background-color: #fff;
+  border: 1px solid #337ab7;
+}
+
+.filter-sidebar ul li .check-info:checked {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.filter-sidebar ul li .check-info:checked:after {
+  border-color: #fff;
+}
+
+.filter-sidebar ul li:hover label {
+  cursor: pointer;
+}
+
+.filter-sidebar .filter-status {
+  -webkit-box-shadow: 1px 1px 9px -2px #ccc;
+  box-shadow: 1px 1px 9px -2px #ccc;
+  padding: 25px 29px 25px 29px;
+  margin-bottom: 31px;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group {
+  margin-bottom: 10px;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .form-control {
+  height: 43px;
+  padding-left: 18px;
+  margin-bottom: 0px;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #111111;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #111111;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  color: #111111;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .form-control.message-area {
+  min-height: 134px;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .btn-default {
+  border-radius: 3px;
+  padding: 10px 31px;
+  font-size: 15px;
+  margin-top: 9px;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.filter-sidebar .austin-contact-form-fields .form-group .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.filter-sidebar .help figure {
+  position: relative;
+  margin: 0;
+}
+
+.filter-sidebar .help figure .image-holder {
+  overflow: hidden;
+  background: #337ab7;
+}
+
+.filter-sidebar .help figure .image-holder img {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.filter-sidebar .help .help-text {
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding: 0px 15px 0px 15px;
+}
+
+.filter-sidebar .help .help-text h6, .filter-sidebar .help .help-text h1, .filter-sidebar .help .help-text p {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.filter-sidebar .help .help-text h1 {
+  font-size: 40px;
+  margin-bottom: 41px;
+}
+
+.filter-sidebar .help .help-text p {
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.filter-sidebar .help .help-text img {
+  margin-bottom: 25px;
+}
+
+.filter-sidebar .appointment {
+  border: 1px solid #e3e3e3;
+  padding: 18px 27px 12px 20px;
+  margin-bottom: 30px;
+}
+
+.filter-sidebar .appointment h4 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+.filter-sidebar .appointment h6 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 23px;
+  font-style: italic;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group {
+  margin-bottom: 10px;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-control {
+  margin-bottom: 0px;
+  height: 42px;
+  padding-left: 24px;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .form-control.message-area {
+  min-height: 100px;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .input-group-addon {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 14px;
+  height: 45px;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  color: #777777;
+  z-index: 9;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .input-group-addon i {
+  vertical-align: middle;
+  padding-top: 13px;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .btn-default {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.filter-sidebar .appointment .appoinment-form-fields .form-group .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.23 Sidebar Widgets
+---------------------------------------- */
+.sidebar {
+  padding-left: 12px;
+}
+
+.sidebar h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #111111;
+}
+
+.sidebar ul li {
+  padding-bottom: 17px;
+}
+
+.sidebar ul li a {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #111111;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.sidebar ul li a i {
+  font-size: 15px;
+  color: #337ab7;
+  margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+  color: #337ab7;
+  margin-left: 10px;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.sidebar .search-bar {
+  margin-bottom: 45px;
+}
+
+.sidebar .search-bar .input-group .form-control {
+  border: 1px solid #dedede;
+  border-radius: 0px;
+  height: 59px;
+  padding-left: 18px;
+}
+
+.sidebar .search-bar .input-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #777777;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar .search-bar .input-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #777777;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar .search-bar .input-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #777777;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar .search-bar .input-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  color: #777777;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sidebar .search-bar .input-group .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.sidebar .search-bar .input-group .btn-search {
+  background: #337ab7;
+  padding: 17px 20px;
+}
+
+.sidebar .search-bar .input-group .btn-search i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.sidebar .latest-news-widget h4 {
+  margin-top: 47px;
+  margin-bottom: 6px;
+}
+
+.sidebar .latest-news-widget .latest-news-list {
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 20px;
+}
+
+.sidebar .latest-news-widget .latest-news-list figure {
+  display: inline-block;
+ 
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar .latest-news-widget .latest-news-list figure::before {
+  content: '';
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  -o-transition: all .4s ease 0s;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.sidebar .latest-news-widget .latest-news-list:hover figure::before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.sidebar .latest-news-widget .latest-news-list:hover figure::after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  content: "\f0c1";
+  font-style: normal;
+  text-decoration: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #337ab7;
+  font-size: 20px;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.sidebar .latest-news-widget .latest-news-list .widget-post-details {
+  display: block;
+  padding-left: 124px;
+  padding-bottom: 23px;
+}
+
+.sidebar .latest-news-widget .latest-news-list .widget-post-details h5 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.sidebar .latest-news-widget .latest-news-list .widget-post-details h5 a {
+  color: #111111;
+}
+
+.sidebar .latest-news-widget .latest-news-list .widget-post-details span {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.sidebar .latest-news-widget .latest-news-list .widget-post-details span a {
+  color: #777777;
+}
+
+.sidebar .latest-news-widget .latest-news-list:hover .widget-post-details h5 a {
+  color: #337ab7;
+}
+
+.sidebar .latest-news-widget .latest-news-list:first-child {
+  padding-top: 0px;
+}
+
+.sidebar .category-widget h4 {
+  margin-bottom: 24px;
+}
+
+.sidebar .category-widget ul {
+  background: #f9f9f9;
+  padding: 27px 0px 11px 31px;
+}
+
+.sidebar .tags-widget h4 {
+  margin-top: 44px;
+  margin-bottom: 26px;
+}
+
+.sidebar .tags-widget .btn-secondary {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-radius: 0px;
+  padding: 6px 18px;
+  background: transparent;
+  color: #777777;
+  border: 1px solid #d2d2d2;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.sidebar .tags-widget .btn-secondary:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.sidebar .tags-widget .btn-secondary:hover {
+  border-color: #337ab7;
+  color: #337ab7;
+}
+
+.sidebar .tags-widget .btn-secondary:active {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.24 Single Blog Page
+---------------------------------------- */
+.single-blog {
+  padding: 120px 0px 101px;
+}
+
+.single-blog .single-item {
+  display: inline-block;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.single-blog .single-item .householder-status {
+  position: absolute;
+  left: 40px;
+  top: 310px;
+}
+
+.single-blog .single-item .householder-status span {
+  font-size: 12px;
+  background: #337ab7;
+  padding: 8px 13px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.single-blog .single-item .householder-status span.rent {
+  opacity: 0.6;
+}
+
+.single-blog .single-item .householder-status span.featured {
+  background: #e03434;
+}
+
+.single-blog .single-item .single-blog-details span {
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+  margin-top: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.single-blog .single-item .single-blog-details h2 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.single-blog .single-item .single-blog-details p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #777777;
+  font-weight: 500;
+}
+
+.single-blog .single-item .single-blog-details blockquote {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 34px;
+  color: #111111;
+  padding: 29px 30px 24px 60px;
+  border-left: 4px solid #337ab7;
+  margin: 40px 0px 41px;
+  background: #f7f7f7;
+}
+
+.single-blog .single-item .single-blog-details .tags {
+  display: inline-block;
+ 
+  margin-top: 38px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+}
+
+.single-blog .single-item .single-blog-details .tags i {
+  margin-right: 10px;
+  color: #777777;
+}
+
+.single-blog .single-item .single-blog-details .tags a {
+  color: #777777;
+}
+
+.single-blog .single-item .single-blog-details .tags a:hover {
+  color: #337ab7;
+}
+
+.single-blog .single-item .single-blog-details ul {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 49px;
+}
+
+.single-blog .single-item .single-blog-details ul li {
+  float: left;
+}
+
+.single-blog .single-item .single-blog-details ul li a {
+  border: 1px solid #c7c7c7;
+  border-radius: 100%;
+  padding: 3px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333333;
+  width: 36px;
+  height: 36px;
+}
+
+.single-blog .single-item .single-blog-details ul li a:hover {
+  background: #337ab7;
+  border-color: #337ab7;
+  color: #fff;
+}
+
+.single-blog .single-item .single-blog-details ul li:nth-child(1) a {
+  padding: 3px 14px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.25 Comments
+---------------------------------------- */
+.comments {
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 44px;
+  padding-bottom: 16px;
+}
+
+.comments h4 {
+  margin-bottom: 23px;
+  color: #111111;
+  font-size: 28px;
+}
+
+.comments ul li img {
+  float: left;
+}
+
+.comments ul li .comments-details {
+  padding-bottom: 27px;
+  padding-left: 114px;
+}
+
+.comments ul li .comments-details h4 {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.comments ul li .comments-details h4 span {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 20px;
+}
+
+.comments ul li .comments-details p {
+  color: #777777;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.comments ul li .comments-details a {
+  font-size: 14px;
+  color: #337ab7;
+}
+
+.comments ul li .comments-details a:hover {
+  color: #111111;
+}
+
+.comments ul li ul {
+  padding-left: 40px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.26 Reply Form
+---------------------------------------- */
+.replay-form h4 {
+  margin-top: 45px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #111111;
+  margin-bottom: 26px;
+}
+
+.replay-form .replay-form-fields .form-group {
+  margin-bottom: 19px;
+}
+
+.replay-form .replay-form-fields .form-group .form-control {
+  margin-bottom: 0px;
+  padding-left: 29px;
+}
+
+.replay-form .replay-form-fields .form-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 14px;
+}
+
+.replay-form .replay-form-fields .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 14px;
+}
+
+.replay-form .replay-form-fields .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 14px;
+}
+
+.replay-form .replay-form-fields .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 14px;
+}
+
+.replay-form .replay-form-fields .form-group .form-control.message-area {
+  min-height: 197px;
+  padding-top: 14px;
+  resize: both;
+}
+
+.replay-form .replay-form-fields .btn-default {
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 11px 32px;
+}
+
+.replay-form .replay-form-fields .btn-default.hvr-sweep-to-right:hover {
+  color:#337ab7;
+  border: 1px solid#337ab7;
+}
+
+.replay-form .replay-form-fields .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.27 Contact Form
+---------------------------------------- */
+.form-control {
+  height: 52px;
+  border: 1px solid #d4d4d4;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  color: #777777;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control.message-area {
+  min-height: 170px;
+}
+
+.contact-form-fields .btn-default {
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 11px 28px;
+}
+
+.contact-form-fields .btn-default.hvr-sweep-to-right:hover {
+  color:#337ab7;
+}
+
+.contact-form-fields .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.28 Register Form
+---------------------------------------- */
+.register-form-fields .form-group .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.register-form-fields .form-group .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.29 Property Details
+---------------------------------------- */
+.property-details {
+  padding: 120px 0 93px;
+}
+
+.property-details .pro-details-item img {
+  width: 100%;
+}
+
+.property-details .pro-details-item .house-status {
+  position: absolute;
+  top: 10px;
+  padding-top: 8px;
+  left: 30px;
+}
+
+.property-details .pro-details-item .house-status span {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 11px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.property-details .pro-details-item .house-status span.rent {
+  opacity: 0.6;
+}
+
+.property-details .pro-details-item .house-status span.featured {
+  background: #e03434;
+}
+
+.property-details .pro-details-item .link-btns {
+  position: absolute;
+  top: 370px;
+  padding-left: 20px;
+}
+
+.property-details .pro-details-item .link-btns ul li {
+  display: inline-block;
+  
+}
+
+.property-details .pro-details-item .link-btns ul li a i {
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  margin-right: 5px;
+  font-size: 17.6px;
+  border-radius: 3px;
+}
+
+.property-details .pro-details-item .link-btns ul li a:hover i {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 11px;
+}
+
+.property-details .pro-details-item .pro-head {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.property-details .pro-details-item .pro-head h2 {
+  font-size: 26px;
+  color: #111111;
+  margin-top: 32px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.property-details .pro-details-item .pro-head h2 .id {
+  font-size: 18px;
+}
+
+.property-details .pro-details-item .pro-head.mr-o h2 {
+  margin-top: 0px;
+}
+
+.property-details .pro-details-item .pro-head.mr-o span {
+  margin-top: 0px;
+}
+
+.property-details .pro-details-item .pro-head .price {
+  display: inline-block;
+  background:#337ab7;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 6px 21px;
+  margin-top: 32px;
+}
+
+.property-details .pro-details-item .pro-head h6 {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.property-details .pro-details-item .pro-head .sq-ft {
+  font-size: 15px;
+  color: #777777;
+}
+
+.property-details .pro-details-item .description h4 {
+  font-size: 22px;
+  color: #111111;
+  margin-top: 26px;
+  margin-bottom: 17px;
+}
+
+.property-details .pro-details-item .description h4.pro-feature {
+  margin-bottom: 18px;
+}
+
+.property-details .pro-details-item .description h4.pro-dets {
+  margin-bottom: 7px;
+}
+
+.property-details .pro-details-item .description .pro-text {
+  font-weight: 500;
+  font-size: 15px;
+  color: #666666;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.property-details .pro-details-item .description .table {
+  margin-bottom: 41px;
+}
+
+.property-details .pro-details-item .description .table tbody tr td {
+  font-size: 16px;
+  color: #111111;
+  line-height: 22px;
+  padding: 10px 10px 0px 0;
+  border-top: 0;
+  width: 210px;
+}
+
+.property-details .pro-details-item .description .table tbody tr td span {
+  color: #777777;
+}
+
+.property-details .pro-details-item .description .features {
+  margin-bottom: 28px;
+}
+
+.property-details .pro-details-item .description .features.feature-list-ul {
+  display: inline-block;
+
+  padding-right: 60px;
+}
+
+.property-details .pro-details-item .description .features li {
+  font-size: 16px;
+  padding-bottom: 6px;
+  color: #111111;
+}
+
+.property-details .pro-details-item .description .features li i {
+  color: #337ab7;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.property-details .pro-details-item .description .agency-agents-item img {
+  width: auto;
+}
+
+.property-details .pro-details-item .description .agency-agents-item .agency-agents-name h4 {
+  margin: inherit;
+}
+
+.property-details .pro-details-item .description .agency-agents-item .agency-agents-name ul li a i {
+  color: #FFFFFF;
+}
+
+.property-details .pro-details-item .description .agency-agents-item .hvr-sweep-to-right:hover {
+  color: #337ab7;
+}
+
+.property-details .pro-details-item .description .agency-agents-item .hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* -------------------------------------
+2 Global Sections - 2.30 Contact Address
+---------------------------------------- */
+.contact-address {
+  padding-bottom: 74px;
+}
+
+.contact-address .address-list h4 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  margin-top: 16px;
+  margin-bottom: 23px;
+}
+
+.contact-address .address-list p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.contact-address .address-list p span {
+  padding-left: 10px;
+}
+
+.contact-address .address-list p span a {
+  color: #444444;
+}
+
+.contact-address .address-list p span a:hover {
+  color: #000000;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.31 Get In Touch
+---------------------------------------- */
+.contact-get-in-touch {
+  padding-top: 0px;
+  padding-bottom: 103px;
+}
+
+.contact-get-in-touch .top-head h4 {
+  text-align: left;
+}
+
+.contact-get-in-touch .map {
+  padding: 0px;
+}
+
+.contact-get-in-touch .map iframe {
+  height: 380px;
+}
+
+.contact-get-in-touch .address {
+  padding-top: 58px;
+}
+
+.contact-get-in-touch .address ul li {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 0px solid #e5e5e5;
+}
+
+.contact-get-in-touch .address ul li:first-child {
+  padding-top: 0px;
+}
+
+.contact-get-in-touch .address ul li img {
+  display: inline-block;
+  margin-top: 8px;
+  
+}
+
+.contact-get-in-touch .address ul li span {
+  padding-left: 37px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #777777;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+.contact-get-in-touch .address ul li p {
+  padding-left: 58px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #111111;
+}
+
+.contact-get-in-touch .address ul li p a {
+  color: #111111;
+}
+
+.contact-get-in-touch .address ul li p a:hover {
+  color: #337ab7;
+}
+
+.contact-get-in-touch .address.head-off {
+  padding-top: 0px;
+}
+
+.contact-get-in-touch .address.head-off ul li {
+  padding-bottom: 12px;
+  padding-top: 15px;
+  border-bottom: 0px;
+}
+
+.contact-get-in-touch .address.head-off ul li:last-child {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.contact-get-in-touch .address.head-off ul li:first-child {
+  padding-top: 0px;
+}
+
+.contact-get-in-touch .address.head-off ul li img {
+  display: none;
+}
+
+.contact-get-in-touch .address.head-off ul li span {
+  padding-left: 0px;
+}
+
+.contact-get-in-touch .address.head-off ul li p {
+  padding-left: 0px;
+}
+
+/* -------------------------------------
+2 Global Sections - 2.32 Get In Touch
+---------------------------------------- */
+.map {
+  padding-top: 0px;
+  padding-bottom: 90px;
+}
+
+.map.full-width {
+  padding-bottom: 113px !important;
+}
+
+/* -------------------------------------
+2 (Global Sections) - 2.33 Footer
+---------------------------------------- */
+.footer {
+ 
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #062c53;
+  
+ 
+  /*
+}
+.footer .footer-widgets {
+  padding: 65px 0px 63px 150px;
+   
+}
+.footer .footer-widgets h4 {
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  line-height: 40px;
+  
+}
+.footer .footer-widgets .logo-widget .logo-image {
+  margin-bottom: 22px;
+  background-color: goldenrod;
+  
+}
+.footer .footer-widgets .logo-widget .logo-image a span {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+.footer .footer-widgets .logo-widget .social-icons a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 3px;
+  
+  
+  
+}
+.footer .footer-widgets .logo-widget .social-icons a i {
+  padding: 15px 8px;
+  background: #333333;
+  border-radius: 100%;
+  width: 44px;
+  color: #FFFFFF;
+  height: 45px;
+  
+  
+}
+.footer .footer-widgets .logo-widget .social-icons a:hover i {
+  background: #337ab7;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer .footer-widgets .get-in-touch-widget {
+  margin-top: 21px;
+}
+.footer .footer-widgets .get-in-touch-widget ul span {
+  display: inline-block;
+  margin-top: 8px;
+}
+.footer .footer-widgets .get-in-touch-widget ul li {
+  padding-bottom: 20px;
+}
+.footer .footer-widgets .get-in-touch-widget ul li p {
+  margin-right: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer .footer-widgets .get-in-touch-widget ul li p a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.footer .footer-widgets .get-in-touch-widget ul li p a:hover {
+  color: #337ab7;
+}
+.footer .footer-widgets .get-in-touch-widget ul li:last-child {
+  padding-bottom: 0px;
+}
+.footer .footer-widgets .areas-we-service-widget {
+  margin-top: 15px;
+ 
+  
+}
+.footer .footer-widgets .areas-we-service-widget  {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px 0px 5px 0px;
+}
+.footer .footer-widgets   {
+  color: #9e9a9a;
+  float: center;
+}
+.footer .footer-widgets .newsletter-widget {
+  margin-top: 15px;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group {
+  margin-top: 8px;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+  font-size: 17px;
+  padding: 10px 69px;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default.hvr-sweep-to-right:hover {
+  color: #337ab7;
+  border: 1px solid #FFFFFF;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default.hvr-sweep-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control {
+  width: 100%;
+  height: 48px;
+  border-radius: 0px;
+  font-weight: 400;
+  color: #FFFFFF;
+  border: transparent;
+  background: #292929;
+  font-size: 14px;
+  
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffff;
+  font-weight: 300;
+}
+
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+  font-weight: 300;
+}
+/*
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group.has-error .help-block {
+  color: #e66e6c;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields.form-horizontal .has-feedback.has-success .form-control-feedback {
+  color: #70e372;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields.form-horizontal .has-feedback.has-error .form-control-feedback {
+  color: #e66e6c;
+}
+.footer .footer-widgets .newsletter-widget .newsletter-form-fields.form-horizontal .has-feedback .form-control-feedback {
+  right: 145px;
+  top: 35px;
+}
+.footer .footer-widgets.with-bg {
+  background-image: url("../images/footer-home2-bg-wthclr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer .footer-widgets.with-bg .newsletter-widget .newsletter-form-fields .form-group .form-control {
+  background: rgba(82, 85, 88, 0.9);
+  padding-left: 20px;
+}
+*/
+.footer .footer-widgets.with-bg .newsletter-widget .newsletter-form-fields .form-group .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: 300;
+}
+
+.footer .footer-widgets.with-bg .newsletter-widget .newsletter-form-fields .form-group .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 300;
+}
+
+.footer .footer-widgets.with-bg .newsletter-widget .newsletter-form-fields .form-group .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: 300;
+}
+
+.footer .footer-widgets.with-bg .newsletter-widget .newsletter-form-fields .form-group .form-controll:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 300;
+}
+/*FOOTER COPYWRITE CONTAINER STARTS HERE*/
+.footer .copyright-container {
+  padding: 25px 40px 25px 0;
+
+}
+.footer .copyright-container p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff
+}
+.footer .copyright-container .footer-menu {
+  text-align: right;
+}
+
+.footer .copyright-container .footer-menu ul {
+  display: inline-block;
+}
+
+.footer .copyright-container .footer-menu ul li {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.footer .copyright-container .footer-menu ul li a {
+  font-size: 14px;
+  color: white;
+  padding: 0px 10px 0px 10px;
+}
+
+.footer .copyright-container .footer-menu ul li a:hover {
+  color: #337ab7;
+}
+
+.footer1, .footer2, .footer3, .get-in-touch-widget, .footer-widgets {
+  text-align: left;
+  
+}
+/*
+.footerIcon {
+  margin-right: 5px;
+}*/
+
+/** --- Mediaquery ---- **/
+/*-------------------------------------------------------------------------------
+ 3. Mediaquery
+-------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .sub-banner .image-caption {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact a {
+    font-size: 13px;
+  }
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact p {
+    font-size: 13px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation {
+    z-index: 10;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 24px 10px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .btn-default {
+    padding: 10px 20px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .create-list .btn-default {
+    padding: 9px 11px;
+    font-size: 13px;
+  }
+  .header .top-container .navbar-primary.secondary-menu {
+    min-height: 70px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 23px 10px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .signin p a {
+    padding: 8px 10px;
+  }
+  .home-page-v1-banner .image-caption {
+    padding-top: 140px;
+  }
+  .home-page-v1-banner .image-caption h5 {
+    margin-bottom: 20px;
+  }
+  .home-page-v1-banner .image-caption form .input-group .btn-default {
+    padding: 15px 10px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption {
+    padding-top: 100px;
+  }
+  .house-listing .house-wrapper .house-list:hover::after {
+    width: 90%;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li {
+    padding-right: 35px;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li:nth-child(3) {
+    padding-right: 23px;
+  }
+  .rent-sale-listing {
+    padding: 120px 0 60px;
+  }
+  .rent-sale-listing.sale-only {
+    padding-top: 60px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info {
+    padding: 0px 0px 0px 15px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info h4 {
+    font-size: 18px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info span {
+    font-size: 13px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info .price {
+    margin-bottom: 0px;
+  }
+  .double-rent-sale-listing .double-rent-carousel .owl-nav {
+    display: block;
+  }
+  .double-rent-sale-listing .listing-pagination {
+    margin-bottom: 6px;
+  }
+  .recent-news .news-item .householder-status {
+    left: 30px;
+    top: 140px;
+  }
+  .recent-news .news-item.no-image .householder-status {
+    margin-left: 0px;
+  }
+  .recent-news .news-item.no-image .news-details .news-name h5, .recent-news .news-item.no-image .news-details .news-name p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .recent-news .news-item.no-image .news-details .news-date {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .great-community .community-list .community-logo {
+    top: 100px;
+  }
+  .great-agents .agents-list.v2-agents-list .content {
+    padding: 0px 5px 0;
+  }
+  .great-agents .agents-list.v2-agents-list .content .agent-social li:last-child a {
+    margin-right: 0px;
+  }
+  .what-you-want .house-types {
+    padding: 20px 10px 20px 10px;
+  }
+  .all-agents .agency-agents-item {
+    padding: 10px 10px 10px 10px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name {
+    padding-left: 120px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name ul li a i {
+    margin-right: 5px;
+  }
+  .sidebar .latest-news-widget .latest-news-list .widget-post-details h5 {
+    font-size: 16px;
+  }
+  .property-details .pro-details-item .link-btns {
+    top: 300px;
+  }
+  .property-details .agency-agents-item.agentdetails {
+    padding: 10px 10px 10px 10px;
+  }
+  .single-blog .single-item .householder-status {
+    top: 250px;
+  }
+  .footer .footer-widgets .get-in-touch-widget ul li p {
+    font-size: 13px;
+  }
+  .footer .footer-widgets .get-in-touch-widget ul li p a {
+    font-size: 13px;
+  }
+  .footer .footer-widgets .areas-we-services-widget .table tbody tr td {
+    font-size: 13px;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+    padding: 10px 46px;
+  }
+  .filter-sidebar .help .help-text {
+    top: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .top-container .top-menu h6 {
+    font-size: 11px;
+  }
+  .header .top-container .top-menu p {
+    font-size: 12px;
+  }
+  .header .top-container .top-menu p a {
+    font-size: 12px;
+  }
+  .header .top-container .middle-menu {
+    padding: 15px 0px 15px;
+  }
+  .header .top-container .middle-menu .logo-image a img {
+    max-width: 50px;
+  }
+  .header .top-container .middle-menu .logo-image a span {
+    font-size: 28px;
+  }
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact {
+    padding-left: 0px;
+  }
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact h5 {
+    font-size: 14px;
+  }
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact p {
+    font-size: 13px;
+  }
+  .header .top-container .middle-menu .middle-menu-contact-info .menu-contact a {
+    font-size: 13px;
+  }
+  .header .top-container .navbar-primary {
+    min-height: 69px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation {
+    z-index: 10;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar {
+    padding: 17px 16px 16px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 10px 20px;
+    display: block;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:first-child a {
+    padding-left: 20px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    padding-left: 30px;
+    text-align: left;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+   
+    background: #22355b;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li a {
+    display: block;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .signin {
+    position: absolute;
+    top: -27px;
+    right: 190px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .create-list {
+    position: absolute;
+    top: -40px;
+    right: 0px;
+  }
+  .header .top-container .navbar-primary.secondary-menu {
+    min-height: 70px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar {
+    padding: 0px 16px 0px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-toggler {
+    border-color: #000000;
+    color: #000000;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .signin {
+    top: -55px;
+    right: 80px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 15px 20px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .home-page-v1-banner .image-caption {
+    padding-top: 80px;
+  }
+  .home-page-v1-banner .image-caption h5 {
+    margin-bottom: 15px;
+  }
+  .home-page-v1-banner .image-caption form .form-group label {
+    padding-left: 25px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption {
+    padding-top: 60px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption h1 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 50px 0 50px;
+  }
+  .house-listing {
+    padding: 50px 0 23px;
+  }
+  .house-listing .house-wrapper .house-list:hover::after {
+    width: 91%;
+  }
+  .rent-sale-listing {
+    padding: 50px 0 50px;
+  }
+  .rent-sale-listing.sale-only {
+    padding: 50px 0 50px;
+  }
+  .great-community {
+    padding-bottom: 20px;
+  }
+  .great-community .community-list {
+    margin-bottom: 30px;
+  }
+  .testimonials {
+    padding: 50px 0 50px;
+  }
+  .testimonials .testimonial-carousel .owl-item .testi-item img {
+    margin-bottom: 15px;
+  }
+  .testimonials.with-bg .layer {
+    padding: 50px 0px 45px;
+  }
+  .clients-logo {
+    padding-bottom: 50px;
+  }
+  .clients-logo.with-paady {
+    padding: 50px 0 50px;
+  }
+  .clients-logo.with-custom-paady {
+    padding-top: 0px;
+  }
+  .double-rent-sale-listing {
+    padding: 50px 0px 0px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list .house-info .price {
+    display: block;
+  }
+  .double-rent-sale-listing.ver-two {
+    padding: 50px 0px 50px;
+  }
+  .double-rent-sale-listing.bg-clr {
+    padding-bottom: 23px;
+  }
+  .portfolio {
+    padding-bottom: 20px;
+  }
+  .recent-news {
+    padding: 50px 0 20px;
+  }
+  .recent-news .news-item .householder-status {
+    top: 170px;
+  }
+  .footer .footer-widgets {
+    padding: 50px 0px 39px;
+  }
+  .footer .footer-widgets .get-in-touch-widget ul li p a {
+    display: block;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+    padding: 10px 106px;
+  }
+  .footer .copyright-container {
+    padding: 20px 0px 20px;
+  }
+  .footer .copyright-container p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer .copyright-container .footer-menu {
+    text-align: center;
+  }
+  .video-promo-box .layer {
+    padding: 100px 0px 100px;
+  }
+  .video-promo-box .layer .promo-icon {
+    padding-top: 20px;
+  }
+  .video-promo-box .layer .promo-text h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .video-promo-box.download-free-app .layer {
+    padding-top: 60px;
+  }
+  .video-promo-box.download-free-app .layer .app-info {
+    padding-top: 50px;
+  }
+  .video-promo-box.download-free-app .layer .app-info h4 {
+    font-size: 26px;
+  }
+  .what-you-want {
+    padding-bottom: 20px;
+  }
+  
+  .preferred-choice {
+    padding: 50px 0 20px;
+  }
+  .preferred-choice .choice-list {
+    margin-bottom: 30px;
+  }
+  .about-experience {
+    padding: 50px 0 50px;
+  }
+  .about-experience .experience-info {
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+  .about-experience .experience-info h4 {
+    margin-bottom: 20px;
+  }
+  .great-agents {
+    padding: 50px 0 20px;
+  }
+  .great-agents .agents-list {
+    margin-bottom: 30px;
+  }
+  .great-agents .agents-list h4 {
+    margin-top: 15px;
+  }
+  .great-agents .agents-list span {
+    display: block;
+  }
+  .great-agents .agents-list ul {
+    display: inline-block;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail img {
+    width: 100%;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line::before, .great-agents .agents-list.v2-agents-list .thumbnail .line::after {
+    bottom: -1px;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line > span::before, .great-agents .agents-list.v2-agents-list .thumbnail .line > span::after {
+    bottom: 40px;
+  }
+  .services {
+    padding-bottom: 20px;
+  }
+  .pricing-table {
+    padding: 50px 0 20px;
+  }
+  .pricing-table .pricing-table-list {
+    margin-bottom: 30px;
+  }
+  .agency-agents-item .agency-agents-name span {
+    display: block;
+  }
+  .sidebar {
+    padding-bottom: 30px;
+  }
+  .single-blog {
+    padding: 50px 0 50px;
+  }
+  .single-blog .single-item .householder-status {
+    top: 280px;
+  }
+  .single-blog .single-item .single-blog-details ul li a {
+    padding: 6px 16px;
+    width: 43px;
+    height: 43px;
+  }
+  .single-blog .single-item .single-blog-details ul li:nth-child(1) a {
+    padding: 6px 17px;
+  }
+  .single-blog .sidebar {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .property-details {
+    padding: 50px 0px 20px;
+  }
+  .property-details .pro-details-item .link-btns {
+    top: 340px;
+  }
+  .hacre-carousel .link-btns {
+    top: 277px;
+  }
+  .all-agents {
+    padding: 40px 0 20px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name {
+    padding-left: 120px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name ul li a i {
+    margin-right: 5px;
+  }
+  .contact-address {
+    padding-bottom: 0px;
+  }
+  .contact-address .address-list {
+    margin-bottom: 30px;
+  }
+  .contact-get-in-touch {
+    padding-bottom: 20px;
+  }
+  .contact-get-in-touch .contact-form-fields .form-control.message-area {
+    max-width: 690px;
+  }
+  .contact-get-in-touch .map {
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contact-get-in-touch .address {
+    padding-top: 18px;
+    padding-bottom: 30px;
+  }
+  .contact-get-in-touch .top-head.head-off-add {
+    margin-top: 20px;
+  }
+  .contact-get-in-touch .top-head h4 {
+    margin-bottom: 29px;
+  }
+  .map {
+    padding-bottom: 50px;
+  }
+  .map.full-width {
+    padding-bottom: 30px !important;
+  }
+  .filter-sidebar {
+    padding-left: 0px;
+  }
+
+  .subHeader {
+    font-size: 20px;
+
+    }
+  
+  .mainHeader {
+    font-size: 45px;
+    }
+
+  .nav-icons {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .top-container .top-menu h6 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .header .top-container .top-menu p {
+    font-size: 13px;
+  }
+  .header .top-container .top-menu p a {
+    font-size: 13px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation {
+    background-color: #ffffff;
+    z-index: 100000;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .logo-image a {
+    margin-top: 0px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-toggler {
+    border-color: #000000;
+    color: #000000;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .signin {
+    position: absolute;
+    top: -57px;
+    right: 70px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .signin a {
+    background: #337ab7;
+    border: 1px solid #337ab7;
+    font-size: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    letter-spacing: 0.1px;
+    padding: 10px 26px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .signin a:hover {
+    background: #ffffff;
+    border-color: #337ab7;
+    color: #337ab7;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:first-child a {
+    padding-left: 20px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    padding-left: 30px;
+    text-align: left;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    background: #fff;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li a {
+    color: #111111;
+    display: block;
+  }
+  .header .top-container .navbar-primary.secondary-menu {
+    min-height: 74px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 15px 20px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .home-page-v1-banner .image-caption {
+    padding-top: 90px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption {
+    padding-top: 46px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption h1 {
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 50px 0 50px;
+  }
+  .house-listing {
+    padding: 50px 0 25px;
+  }
+  .house-listing .house-wrapper .house-list figure .image-holder img {
+    width: 100%;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-info {
+    display: flow-root;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-info ul {
+    display: block;
+  }
+  .house-listing .house-wrapper .house-list:hover::after {
+    width: 94%;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li {
+    padding-right: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .rent-sale-listing {
+    padding: 50px 0 50px;
+  }
+  .rent-sale-listing.sale-only {
+    padding: 50px 0 50px;
+  }
+  .great-community {
+    padding-bottom: 20px;
+  }
+  .great-community .community-list {
+    margin-bottom: 30px;
+  }
+  .great-community .community-list .community-logo {
+    top: 70px;
+  }
+  .great-community .community-list .community-details h4 {
+    font-size: 17px;
+  }
+  .testimonials {
+    padding: 50px 0 50px;
+  }
+  .testimonials.with-bg .layer {
+    padding: 50px 0px 45px;
+  }
+  .testimonials .testimonial-carousel .owl-item .testi-item img {
+    margin-bottom: 10px;
+  }
+  .clients-logo {
+    padding-bottom: 50px;
+  }
+  .clients-logo.with-paady {
+    padding: 50px 0 50px;
+  }
+  .clients-logo.with-custom-paady {
+    padding-top: 0px;
+  }
+  .footer .footer-widgets {
+    padding: 30px 0px 30px;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+    padding: 10px 61px;
+  }
+  .footer .copyright-container {
+    padding: 20px 0px 20px;
+  }
+  .footer .copyright-container p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer .copyright-container .footer-menu {
+    text-align: center;
+  }
+  .find-neighbor .layer {
+    padding: 45px 0px 35px;
+  }
+  .double-rent-sale-listing {
+    padding: 50px 0 50px;
+  }
+  .double-rent-sale-listing .double-rent-carousel .owl-nav {
+    margin-top: 20px;
+  }
+  .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next {
+    position: inherit;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info {
+    padding: 13px 0px 0px 28px;
+  }
+  .double-rent-sale-listing.ver-two {
+    padding: 50px 0 50px;
+  }
+  .double-rent-sale-listing.ver-two .listing-pagination {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .double-rent-sale-listing.ver-two .double-rent-sale-list {
+    margin-bottom: 30px;
+  }
+  .double-rent-sale-listing.bg-clr {
+    padding-bottom: 46px;
+  }
+  .portfolio {
+    padding-bottom: 20px;
+  }
+  .recent-news {
+    padding: 50px 0 20px;
+  }
+  .recent-news .news-item .householder-status {
+    top: 115px;
+  }
+  .recent-news .news-item .news-details .news-name h5 {
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+  .recent-news .news-item .news-details .news-name p {
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .recent-news .news-item .news-details .news-date {
+    padding: 12px 10px 12px 10px;
+  }
+  .video-promo-box .layer {
+    padding: 90px 0px 90px;
+  }
+  .video-promo-box .layer .promo-icon {
+    padding-top: 0px;
+    text-align: center;
+  }
+  .video-promo-box .layer .promo-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .video-promo-box .layer .promo-text h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .video-promo-box.download-free-app .layer {
+    padding: 50px 0px 50px;
+  }
+  .video-promo-box.download-free-app .layer .app-info {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .what-you-want {
+    padding-bottom: 20px;
+  }
+  .what-you-want .house-types {
+    
+    padding: 20px 10px 20px 10px;
+  }
+  .preferred-choice {
+    padding: 50px 0 20px;
+  }
+  .preferred-choice .choice-list {
+    margin-bottom: 30px;
+  }
+  .about-experience {
+    padding: 50px 0 50px;
+  }
+  .about-experience .experience-info {
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+  .about-experience .experience-info h4 {
+    margin-bottom: 20px;
+  }
+  .great-agents {
+    padding: 50px 0 20px;
+  }
+  .great-agents .agents-list {
+    margin-bottom: 30px;
+  }
+  .great-agents .agents-list h4 {
+    margin-top: 15px;
+  }
+  .great-agents .agents-list span {
+    display: block;
+  }
+  .great-agents .agents-list ul {
+    display: inline-block;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail img {
+    width: 100%;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line::before, .great-agents .agents-list.v2-agents-list .thumbnail .line::after {
+    bottom: 1px;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line > span::before, .great-agents .agents-list.v2-agents-list .thumbnail .line > span::after {
+    bottom: 40px;
+  }
+  .great-agents .agents-list.v2-agents-list .content {
+    padding: 0px 5px 0;
+  }
+  .great-agents .agents-list.v2-agents-list .content .agent-social li:last-child a {
+    margin-right: 0px;
+  }
+  .services {
+    padding-bottom: 10px;
+  }
+  .pricing-table {
+    padding: 50px 0 20px;
+  }
+  .pricing-table .pricing-table-list {
+    margin-bottom: 30px;
+  }
+  .all-agents {
+    padding: 50px 0 20px;
+  }
+  .all-agents .agency-agents-item {
+    padding: 10px 10px 10px 10px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name span {
+    display: block;
+  }
+  .all-agents .agency-agents-item .agency-agents-name ul {
+    float: none;
+  }
+  .all-agents .agency-agents-item.agentdetails img {
+    margin-right: 10px;
+  }
+  .all-agents .agency-agents-item.agentdetails .agency-agents-name {
+    margin-top: 0px;
+  }
+  .all-agents .agency-agents-item.agentdetails .agency-agents-name .name {
+    display: block;
+  }
+  .all-agents .agency-agents-item.agentdetails ul li span img {
+    margin-right: initial;
+  }
+  .all-agents .agency-agents-item.agentdetails p {
+    margin-top: 10px;
+  }
+  .single-blog {
+    padding: 50px 0 50px;
+  }
+  .single-blog .single-item .householder-status {
+    top: 190px;
+  }
+  .single-blog .single-item .single-blog-details blockquote {
+    padding-left: 30px;
+  }
+  .single-blog .sidebar {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .hacre-carousel .link-btns {
+    top: 188px;
+  }
+  .property-details {
+    padding: 50px 0px 50px;
+  }
+  .property-details .pro-details-item .description .table tbody tr td {
+    font-size: 14px;
+    padding: 10px 0px 5px 0;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails {
+    padding: 10px 10px 10px 10px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails p {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails img {
+    margin-right: 15px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails ul li span img {
+    margin-right: 0px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails ul li p {
+    margin-top: 0px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails .agency-agents-name ul {
+    float: left !important;
+    margin-bottom: 10px;
+  }
+  .property-details .pro-details-item .link-btns {
+    top: 240px;
+  }
+  .property-details .filter-sidebar .appointment .appoinment-form-fields .form-group .no-r-padding {
+    padding-right: 15px;
+  }
+  .property-details .filter-sidebar .appointment .appoinment-form-fields .form-group .input-group-addon {
+    right: 30px;
+  }
+  .contact-address {
+    padding-bottom: 18px;
+  }
+  .contact-address .address-list {
+    margin-bottom: 30px;
+  }
+  .contact-address .address-list > img {
+    width: 100%;
+  }
+  .contact-get-in-touch {
+    padding-bottom: 50px;
+  }
+  .contact-get-in-touch .address {
+    padding-top: 30px;
+  }
+  .contact-get-in-touch .head-off-add {
+    margin-top: 30px;
+  }
+  .contact-get-in-touch .head-off-add h4 {
+    margin-bottom: 20px;
+  }
+  .contact-get-in-touch .contact-form-fields {
+    margin-bottom: 15px;
+  }
+  .map {
+    padding-bottom: 50px;
+  }
+  .map.full-width {
+    padding-bottom: 50px !important;
+  }
+
+  .nav-icons {
+  padding: 0;
+  }
+  .filter-sidebar {
+    padding-left: 0px;
+  }
+  .sidebar {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header .top-container .top-menu p {
+    text-align: center;
+  }
+  .header .top-container .navbar-primary .sticky_navigation {
+    z-index: 100000;
+    background-color: #ffffff;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar {
+    padding: 0px 10px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .logo-image a {
+    margin-top: 0px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .signin {
+    display: none;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-toggler {
+    border-color: #000000;
+    color: #000000;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li:first-child a {
+    padding-left: 20px;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    padding-left: 30px;
+    text-align: left;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    background: #fff;
+  }
+  .header .top-container .navbar-primary .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu li a {
+    color: #111111;
+    display: block;
+  }
+  .header .top-container .navbar-primary.secondary-menu {
+    min-height: 74px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li a {
+    padding: 15px 20px;
+  }
+  .header .top-container .navbar-primary.secondary-menu .sticky_navigation .navbar .navbar-collapse .nav.navbar-nav li.dropdown.show .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .home-page-v1-banner .image-caption {
+    padding-top: 45px;
+  }
+  .home-page-v1-banner .image-caption h1 {
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  .home-page-v1-banner .image-caption h5 {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption {
+    padding-top: 20px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .home-page-v1-banner.v3-banner .image-caption .btn-default {
+    padding: 0px 8px;
+    font-size: 10px;
+  }
+  section {
+    padding: 50px 0 50px;
+  }
+  .top-head h4 {
+    font-size: 48px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .house-listing {
+    padding: 50px 0 20px;
+  }
+  .house-listing .house-wrapper .house-list figure .image-holder img {
+    width: 100%;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-holder-info {
+    padding: 13px 10px 15px 10px;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-holder-info img {
+    margin-right: 5px;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-info {
+    display: block;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-info ul li {
+    font-size: 12px;
+  }
+  .house-listing .house-wrapper .house-list .list-details .house-info span {
+    display: block;
+  }
+  .house-listing .house-wrapper .house-list:hover::after {
+    display: block;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li {
+    padding-right: 55px;
+    font-size: 12px;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li span {
+    display: inline-block;
+  }
+  .house-listing.v2-listing .house-wrapper .list-details .house-info ul li:nth-child(3) {
+    padding-right: 43px;
+  }
+  .rent-sale-listing {
+    padding: 50px 0 50px;
+  }
+  .rent-sale-listing .rent-carousel .owl-nav, .rent-sale-listing .sale-carousel .owl-nav {
+    margin-top: 15px;
+  }
+  .rent-sale-listing .rent-carousel .owl-nav .owl-prev, .rent-sale-listing .rent-carousel .owl-nav .owl-next, .rent-sale-listing .sale-carousel .owl-nav .owl-prev, .rent-sale-listing .sale-carousel .owl-nav .owl-next {
+    position: inherit;
+  }
+  .rent-sale-listing.sale-only {
+    padding: 50px 0 50px;
+  }
+  .find-neighbor .layer {
+    padding: 50px 0px 50px;
+  }
+  .find-neighbor .layer p {
+    padding-bottom: 25px;
+  }
+  .find-neighbor .layer .input-group {
+    max-width: 100%;
+  }
+  .great-community {
+    padding-bottom: 20px;
+  }
+  .great-community .community-list {
+    margin-bottom: 30px;
+  }
+  .great-community .community-list figure .image-holder img {
+    width: 100%;
+  }
+  .great-community .community-list .community-logo {
+    top: 140px;
+  }
+  .testimonials {
+    padding: 50px 0 50px;
+  }
+  .testimonials.with-bg {
+    padding-bottom: 0px;
+  }
+  .testimonials.with-bg .layer {
+    padding: 50px 0 50px;
+  }
+  .testimonials .testimonial-carousel .owl-item .testi-item img {
+    margin-bottom: 10px;
+  }
+  .clients-logo {
+    padding-bottom: 50px;
+  }
+  .clients-logo.with-paady {
+    padding: 50px 0 50px;
+  }
+  .clients-logo.with-custom-paady {
+    padding-top: 0px;
+    background-color: white;
+    
+  }
+  .footer .footer-widgets {
+    padding: 30px 0px 30px;
+  }
+  .footer .footer-widgets .logo-widget, .footer .footer-widgets .get-in-touch-widget, .footer .footer-widgets .business-hrs-widget {
+    border-bottom: 1px solid #2c2a2a;
+    padding-bottom: 30px;
+  }
+  .footer .footer-widgets.with-bg .logo-widget, .footer .footer-widgets.with-bg .get-in-touch-widget, .footer .footer-widgets.with-bg .business-hrs-widget {
+    border-bottom: 1px solid #8f8e8e;
+  }
+  .footer .footer-widgets .get-in-touch-widget ul li p a {
+    display: block;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .form-control {
+    width: 50%;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+    padding: 10px 10px;
+  }
+  .footer .copyright-container {
+    padding: 20px 0px 20px;
+  }
+  .footer .copyright-container p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer .copyright-container .footer-menu {
+    text-align: center;
+  }
+  .double-rent-sale-listing {
+    padding: 50px 0 50px;
+  }
+  .double-rent-sale-listing .double-rent-carousel .owl-nav {
+    margin-top: 20px;
+  }
+  .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-prev, .double-rent-sale-listing .double-rent-carousel .owl-nav .owl-next {
+    position: inherit;
+  }
+  .double-rent-sale-listing .double-rent-sale-list {
+    width: 100%;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure {
+    width: 100%;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .image-holder {
+    float: none;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .image-holder img {
+    width: 100%;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info {
+    display: inline-block;
+    padding-left: 0px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info ul {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .double-rent-sale-listing .double-rent-sale-list figure .house-info .price {
+    margin-bottom: 0px;
+    display: block;
+  }
+  .double-rent-sale-listing .double-rent-sale-list.ver-two {
+    padding: 50px 0 50px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list.ver-two .double-rent-sale-list {
+    margin-bottom: 30px;
+  }
+  .double-rent-sale-listing .double-rent-sale-list.ver-two .listing-pagination {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .double-rent-sale-listing.ver-two {
+    padding: 50px 0 50px;
+  }
+  .double-rent-sale-listing.bg-clr {
+    padding-bottom: 50px;
+  }
+  .portfolio {
+    padding-bottom: 20px;
+  }
+  .recent-news {
+    padding: 50px 0 40px;
+  }
+  .recent-news .news-item figure .image-holder img {
+    width: 100%;
+  }
+  .recent-news .news-item .news-details .news-name h5 {
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+  .recent-news .news-item .news-details .news-name p {
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .recent-news .news-item .news-details .news-date {
+    padding: 12px 10px 12px 10px;
+  }
+  .recent-news .listing-pagination {
+    margin-top: 0px;
+  }
+  .property-search-form .no-padding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .video-promo-box .layer {
+    padding: 50px 0px 50px;
+  }
+  .video-promo-box .layer .promo-icon {
+    padding-top: 0px;
+    text-align: center;
+  }
+  .video-promo-box .layer .promo-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .video-promo-box .layer .promo-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .video-promo-box.download-free-app .layer {
+    padding: 50px 0px 50px;
+  }
+  .video-promo-box.download-free-app .layer .app-info {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .video-promo-box.download-free-app .layer .app-info h4 {
+    font-size: 25px;
+  }
+  .what-you-want {
+    padding-bottom: 20px;
+  }
+  .what-you-want .house-types {
+    
+    padding: 20px 10px 20px 10px;
+  }
+  .preferred-choice {
+    padding: 50px 0 20px;
+  }
+  .preferred-choice .choice-list {
+    margin-bottom: 30px;
+  }
+  .about-experience {
+    padding: 50px 0 50px;
+  }
+  .about-experience .experience-info {
+    margin-top: 30px;
+  }
+  .about-experience .experience-info h4 {
+    margin-bottom: 20px;
+  }
+  .great-agents {
+    padding: 50px 0 20px;
+  }
+  .great-agents .agents-list {
+    margin-bottom: 30px;
+  }
+  .great-agents .agents-list img {
+    width: 100%;
+  }
+  .great-agents .agents-list h4 {
+    margin-top: 15px;
+  }
+  .great-agents .agents-list span {
+    display: block;
+  }
+  .great-agents .agents-list ul {
+    display: inline-block;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail img {
+    width: 100%;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line::before, .great-agents .agents-list.v2-agents-list .thumbnail .line::after {
+    bottom: -6px;
+    height: 45px;
+  }
+  .great-agents .agents-list.v2-agents-list .thumbnail .line > span::before, .great-agents .agents-list.v2-agents-list .thumbnail .line > span::after {
+    bottom: 50px;
+  }
+  .great-agents .agents-list.v2-agents-list .content {
+    padding: 0px 5px 0;
+  }
+  .great-agents .agents-list.v2-agents-list .content .agent-social li:last-child a {
+    margin-right: 0px;
+  }
+  .services {
+    padding-bottom: 10px;
+  }
+  .services .service-list figure .image-holder img {
+    width: 100%;
+  }
+  .pricing-table {
+    padding: 50px 0 20px;
+  }
+  .pricing-table .pricing-table-list {
+    margin-bottom: 30px;
+  }
+  .all-agents {
+    padding: 50px 0 20px;
+  }
+  .all-agents .agency-agents-item {
+    padding: 10px 10px 10px 10px;
+  }
+  .all-agents .agency-agents-item .agency-agents-name span {
+    display: block;
+  }
+  .all-agents .agency-agents-item.agentdetails > img {
+    margin-right: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+  .all-agents .agency-agents-item.agentdetails .agency-agents-name {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    display: inline-block;
+  }
+  .all-agents .agency-agents-item.agentdetails .agency-agents-name .name {
+    display: block;
+    margin-top: 10px;
+  }
+  .all-agents .agency-agents-item.agentdetails .agency-agents-name ul {
+    float: none;
+  }
+  .single-blog {
+    padding: 50px 0 40px;
+  }
+  .single-blog .single-item .householder-status {
+    top: 130px;
+  }
+  .single-blog .single-item .single-blog-details blockquote {
+    padding-left: 30px;
+  }
+  .single-blog .single-item .single-blog-details .tags {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .single-blog .single-item .single-blog-details ul {
+    margin-top: 10px;
+    float: left !important;
+    margin-bottom: 30px;
+  }
+  .single-blog .sidebar {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .property-details {
+    padding: 50px 0px 50px;
+  }
+  .property-details .pro-details-item .pro-head {
+    display: inline-block;
+  }
+  .property-details .pro-details-item .pro-head h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .property-details .pro-details-item .pro-head .price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left !important;
+  }
+  .property-details .pro-details-item .pro-head h6 {
+    font-size: 15px;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .property-details .pro-details-item .pro-head .sq-ft {
+    margin-top: 0px;
+    float: left !important;
+    margin-bottom: 20px;
+  }
+  .property-details .pro-details-item .description .table tbody tr td {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 10px 0px 10px 0;
+  }
+  .property-details .pro-details-item .description .features li {
+    font-size: 15px;
+  }
+  .property-details .pro-details-item .description .features.feature-list-ul {
+    padding-right: 20px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails {
+    padding: 10px 10px 10px 10px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails p {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails img {
+    margin-right: 15px;
+    width: 100%;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails ul li span img {
+    margin-right: 0px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails ul li p {
+    margin-top: 0px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails .agency-agents-name {
+    display: inline-block;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails .agency-agents-name .name {
+    display: block;
+    margin-top: 20px;
+  }
+  .property-details .pro-details-item .description .agency-agents-item.agentdetails .agency-agents-name ul {
+    float: left;
+    margin-bottom: 10px;
+  }
+  .property-details .pro-details-item .link-btns {
+    top: 160px;
+  }
+  .property-details .filter-sidebar .appointment .appoinment-form-fields .form-group .no-r-padding {
+    padding-right: 15px;
+  }
+  .property-details .filter-sidebar .appointment .appoinment-form-fields .form-group .input-group-addon {
+    right: 30px;
+  }
+  .property-details .filter-sidebar .appointment .appoinment-form-fields .form-group .datepicker {
+    margin-bottom: 15px;
+  }
+  .property-details .filter-sidebar .help .help-text {
+    top: 95px;
+  }
+  .hacre-carousel .house-status {
+    left: 20px;
+    top: 0px;
+  }
+  .hacre-carousel .link-btns {
+    top: 130px;
+  }
+  .hacre-carousel .link-btns ul li a i {
+    padding: 11px;
+    font-size: 14.6px;
+  }
+  .hacre-carousel .link-btns ul li a:hover i {
+    padding: 10px;
+  }
+  .contact-address {
+    padding-bottom: 32px;
+  }
+  .contact-address .address-list p {
+    font-size: 14px;
+  }
+  .contact-address .address-list p span {
+    padding-left: 5px;
+  }
+  .contact-address .address-list > img {
+    width: 100%;
+  }
+  .contact-get-in-touch {
+    padding-bottom: 30px;
+  }
+  .contact-get-in-touch .address {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .contact-get-in-touch .address.head-off {
+    padding-bottom: 20px;
+  }
+  .contact-get-in-touch .contact-form-fields .btn-default {
+    margin-bottom: 20px;
+  }
+  .contact-get-in-touch .map {
+    padding-bottom: 20px;
+  }
+  .map {
+    padding-bottom: 50px;
+  }
+  .map.full-width {
+    padding-bottom: 50px !important;
+  }
+  .footer .footer-widgets .areas-we-service-widget .table {
+    max-width: 100%;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group {
+    max-width: 100%;
+  }
+  .footer .footer-widgets .newsletter-widget .newsletter-form-fields .form-group .input-group .btn-default {
+    margin-top: 0;
+  }
+  .footer .copyright-container p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer .copyright-container .footer-menu {
+    text-align: center;
+  }
+  .footer .copyright-container .footer-menu ul li a {
+    font-size: 12px;
+    padding: 0 4px 0 4px;
+  }
+  .filter-sidebar {
+    padding-left: 0px;
+  }
+  .filter-sidebar .appointment .appoinment-form-fields .form-group .date .input-group-addon {
+    right: 14px;
+  }
+  .filter-sidebar .help .help-text {
+    top: 45px;
+  }
+  .sidebar {
+    padding-left: 0;
+  }
+  .comments {
+    margin-top: 24px;
+  }
+  .comments ul li .comments-details {
+    padding-left: 0px;
+  }
+  .comments ul li .comments-details h4 {
+    padding-left: 100px;
+    padding-top: 20px;
+  }
+  .comments ul li .comments-details h4 span {
+    margin-left: 0px;
+    display: block;
+    margin-top: 10px;
+  }
+  .comments ul li .comments-details p {
+    display: inline-block;
+    padding-top: 20px;
+  }
+}
+
+
+
+@media (min-width: 200px) and (max-width: 299px) {
+
+
+  .great-community .community-list .community-logo {
+    top: 120px;
+  }
+  .house-listing .house-wrapper .house-list:hover::after {
+    width: 91%;
+  }
+  .recent-news .news-item .householder-status {
+    top: 165px;
+  }
+  .single-blog .single-item .householder-status {
+    top: 114px;
+    left: 28px;
+  }
+
+
+  .hacre-carousel .link-btns {
+    top: 120px;
+  }
+  .hacre-carousel .link-btns ul li a i {
+    padding: 8px;
+    font-size: 13px;
+    color:black;
+  }
+  .hacre-carousel .link-btns ul li a:hover i {
+    padding: 7px;
+  }
+  .property-details .pro-details-item .link-btns {
+    top: 154px;
+  }
+  .property-details .pro-details-item .link-btns ul li a i {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .property-details .pro-details-item .link-btns ul li a:hover i {
+    padding: 7px;
+  }
+ /*map*/ 
+}
+.map_wrapper {
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom:50px; 
+}
+
+/*map*/ 
+
+#map_wrapper {
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom:50px; 
+}
+
+#map_canvas {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
+.dropbtn {
+  
+  color:black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {background-color:white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:white;}
+.btn-default{
+  color:black;
+  background: #093c70;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 26px;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  border-radius: 0px;
+
+}
+.nav{
+  color: black;
+}
+
+
+
+
+
+
+/*Testimonial-------------------------------------Begin*/
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: rgb(153, 153, 153);
+	overflow: hidden;
+  min-height: 120px;
+	font-size: 13px;
+}
+.carousel .media img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 0 15px 0 60px ;
+	position: relative;
+}
+.carousel .testimonial::before {
+	content: '\93';
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 68px;
+	line-height: 54px;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.carousel, .overview, b {
+	
+  color: #e5e4f0;
+  margin-right: 90px;
+  
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 18px;
+  height: 18px;
+	border-radius: 50%;
+  margin: 1px 5px;
+  
+  
+ 
+}
+.carousel-indicators li {	
+  background: rgb(79, 82, 103);
+  border: 0px solid rgb(28, 38, 99);
+}
+.carousel-indicators li.active {
+	color: rgb(38, 106, 165);
+  background: #0078C1;    
+  border: 2px double;
+      
+}
+.testimonialHead {
+  font-size:45px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  align-content: center;
+  margin:auto;
+  margin-top: 45px;
+  padding: auto;
+  
+ }
+
+.testimonialContainer {
+  
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  float: center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background:url("") ;
+  background-color: #093c70;
+  
+}
+
+.testimonialQuote {
+  
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-family: italic;
+  font-style: italic;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 30px;
+  margin-bottom: 30px; 
+  width: 100%;
+  padding: 25px;
+  line-height: 40px;
+  padding-right: 40px;
+}
+
+#myCarousel {
+  margin-left: 100px;
+  
+}
+
+
+/*Guarantees Begin*/
+
+.guaranteeHeader1 {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 70px;
+  -webkit-text-stroke-width: 1px;
+  /*text-shadow:3px 3px 3px rgb(0, 2, 15);*/
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #093c70; 
+}
+.guarantee1, .guaranteeText1 {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 30px; 
+}
+
+.guarantee2, .guaranteeText2 {
+  background-color: #093c70;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 20px;
+  margin-bottom: 10px; 
+  width: 100%;
+  padding: 85px;
+  line-height: 30px;
+ 
+}
+
+.guaranteeHeader2, .qbo {
+  font-family: 'Raleway', sans-serif;
+  
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-content: center;
+  margin:auto;
+  padding: auto;
+  background-color: #093c70;
+}
+
+.containerServices {
+  padding: 100px 150px 100px 150px;
+}
+
+.choice-list
+{
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+
+
+
+/* pricing chart starts*/
+
+
+.comparison {
+  max-width:960px;
+  margin:0 auto;
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  padding:10px;
+}
+
+.comparison table {
+  width:940px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border-bottom:1px solid #337ab7;
+}
+
+.comparison td, .comparison th {
+  border-right:1px solid #337ab7;
+  empty-cells: show;
+  padding:10px;
+}
+
+.compare-heading {
+  font-size:18px;
+  font-weight:bold !important;
+  border-bottom:0 !important;
+  padding-top:10px !important;
+}
+
+.comparison tbody tr:nth-child(odd) {
+  display:none;
+}
+
+.comparison .compare-row {
+  background:#F5F5F5;
+}
+
+.comparison .tickblue {
+  color:#0078C1;
+}
+
+.comparison .tickgreen {
+  color:#009E2C;
+}
+
+.comparison th {
+  font-weight:normal;
+  padding:0;
+  border-bottom:1px solid #337ab7;
+}
+
+.comparison tr td:first-child {
+  text-align:left;
+}
+  
+.comparison .qbse, .comparison .qbo, .comparison .tl {
+  color:#FFF;
+  padding:10px;
+  font-size:13px;
+  border-right:1px solid#337ab7;
+  border-bottom:0;
+}
+
+.comparison .tl2 {
+  border-right:0;
+}
+
+.comparison .qbse {
+  background:#0078C1;
+  border-top-left-radius: 3px;
+  border-left:0px;
+}
+
+.comparison .qbo {
+  background:#093c70;
+  border-top-right-radius: 3px;
+  border-right:0px;
+}
+
+.comparison .price-info {
+  padding:5px 15px 15px 15px;
+}
+
+.comparison .price-was {
+  color:#337ab7;
+  text-decoration: line-through;
+}
+
+.comparison .price-now, .comparison .price-now span {
+  color:#337ab7;
+}
+
+.comparison .price-now span {
+  font-size:32px;
+}
+
+.comparison .price-small {
+    font-size: 18px !important;
+    position: relative;
+    top: -11px;
+    left: 2px;
+}
+
+.comparison .price-buy {
+  background:#ff5406;
+  padding:10px 20px;
+  font-size:12px;
+  display:inline-block;
+  color:#FFF;
+  text-decoration:none;
+  border-radius:3px;
+  text-transform:uppercase;
+  margin:5px 0 10px 0;
+}
+
+.comparison .price-try {
+  font-size:12px;
+}
+
+.comparison .price-try a {
+  color:#202020;
+}
+
+@media (max-width: 767px) {
+  .comparison td:first-child, .comparison th:first-child {
+    display: none;
+  }
+  .comparison tbody tr:nth-child(odd) {
+    display:table-row;
+    background:1px solid;
+  }
+  .comparison .row {
+    background:#FFF;
+    
+  }
+  .comparison td, .comparison th {
+    border:1px solid;
+  }
+  .price-info {
+  border-top:0 !important;
+  
+}
+  
+}
+
+@media (max-width: 639px) {
+  .comparison .price-buy {
+    padding:5px 10px;
+  }
+  .comparison td, .comparison th {
+    padding:10px 5px;
+  }
+  .comparison .hide-mobile {
+    display:none;
+  }
+  .comparison .price-now span {
+  font-size:16px;
+}
+
+.comparison .price-small {
+    font-size: 16px !important;
+    top: 0;
+    left: 0;
+}
+  .comparison .qbse, .comparison .qbo {
+    font-size:12px;
+    padding:10px 5px;
+  }
+  .comparison .price-buy {
+    margin-top:10px;
+  }
+  .compare-heading {
+  font-size:13px;
+}
+}
+
+
+#page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#toolbar {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #093c70;
+  padding: 0 16px;
+}
+
+#actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 64px;
+  
+}
+
+#actions, .icon {
+  padding: 7px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+#actions .spacer {
+  flex: 1;
+}
+
+#actions svg {
+  display: inline-block;
+  pointer-events: none;
+  position: relative;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+#title {
+  padding: 21px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+#content {
+  display: block;
+  position: relative;
+  padding: 24px;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100px;
+  border: 1px solid #093c70;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;   
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 16px auto;
+  padding: 24px;
+  align-content: center;
+  float: center;
+  background-color:#f8f8f8;
+  
+}
+
+
+#youtube1 {
+  display: block;
+  position: relative;
+  width: 638px;
+  height: 380px;
+  background-color: #fff;
+  margin: 16px auto;
+  padding: 24px;
+  align-content: center;
+  float: center;
+ 
+}
+ 
+#content {
+  align-content: center;
+  float: center;
+  position: relative;
+  margin: auto;
+  padding: auto;
+}
+
+
+
+
+
+body {
+  background-color: #edeff1;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #34495e;
+  font-size: .9em;
+}
+
+.form {
+  width: 400px;
+  margin:auto;
+  background: white;
+  border-radius: 3px;
+  margin-top: 5em;
+  margin-bottom: 6em;
+  padding: 1.25em;
+}
+
+h3 {
+  font-size: 1.98em;
+  margin-bottom: .8em;
+  margin-top: .4em;
+  font-weight: 100;
+}
+
+.btn-primary {
+  box-shadow: 0; 
+  border: none; 
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+  color: #ffffff;
+  outline: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .5s;
+  padding: 10px 19px;
+  font-size: 17px;
+  line-height: 1.471;
+  width: 20%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 1.44em;
+  margin-bottom: .55em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inherit;
+}
+
+.btn-primary:hover {
+  background-color: #1ABC9C;
+}
+
+.form-group {
+  position: relative;
+  opacity: 1;
+  transition: .6s;
+}
+
+.input-field-icon {
+  color: #bfc9ca;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  transition: .6s;
+}
+
+.form-control {
+  transition: opacity .6s;
+  opacity: 1;
+  border: 0;
+  border-bottom: 2px solid #bdc3c7;
+  border-radius: 0;
+  background: white;
+  font-size: 15px;
+  line-height: 1.467;
+  padding: 4px;
+  height: 42px;
+  -webkit-appearance: none;
+}
+
+input, textarea {
+  transition: all 800ms;
+  font-family: "Roboto";
+  resize: none;  /* removes the resize handle */
+  overflow: auto; /* removes default scrolling bars in IE */
+  outline:none; 
+  font-family:inherit; 
+  box-sizing:border-box;
+  width: 100%;
+  padding: 0px 4px;
+  color: #34495e;
+  margin-top: 1.25em;
+}
+
+
+.has-error input, .has-error textarea {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.has-error .input-field-icon {
+  color: #e74c3c;
+}
+
+.has-success input, .has-success textarea {
+  color: #093c70;
+  border-color:#093c70;
+}
+
+.has-success .input-field-icon {
+  color: #093c70;
+}
+
+
+input:focus, textarea:focus {
+  border-color: #093c70;
+  color: #34495e;
+}
+
+input:focus + .input-field-icon {
+  color: #34495e;
+}
+
+textarea.form-control {
+  height: 120px;
+  transition: .6s;
+}
+
+textarea.form-control:focus {
+  height: 200px;
+  border-color: #093c70;
+}
+
+.social {
+  display: block;
+  margin: auto;
+  width: 250px;
+}
+
+.social li {
+  display: inline-block;
+  list-style: none;
+  margin: auto;
+  margin-right: 10px;
+}
+
+.social li a {
+  display:block;
+  text-decoration: none;
+  color: #999;
+  border: 2px solid #999;
+  border-radius: 100%;
+  font-size: 26px;
+  width: 34px;
+  padding: 3px;
+  text-align: center;
+  transition: all .4s;
+}
+
+.social li a:hover {
+  background: #999;
+  color: white;
+}
+
+.social li a span {
+  margin-top: 4px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+    margin-top: 12%;
+  }
+}

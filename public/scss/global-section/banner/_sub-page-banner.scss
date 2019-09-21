@@ -1,0 +1,19 @@
+/* -------------------------------------
+2 Global Sections - 2.20 Sub Page Banner
+---------------------------------------- */
+.sub-page-banner {
+  background-image: url("../images/sub-page-banner.png");
+  background-repeat: repeat;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 0;
+  .layer {
+    padding: 113px 0 113px;
+    h1 {
+      font-size: 45px;
+      color: #fff;
+      line-height: 33px;
+      font-weight: 700;
+    }
+  }
+}

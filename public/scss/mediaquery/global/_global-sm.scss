@@ -1,0 +1,599 @@
+.header {
+  .top-container {
+    .top-menu {
+      h6 {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 13px;
+      }
+      p {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+    .navbar-primary {
+      .sticky_navigation {
+        background-color: #ffffff;
+        z-index: 100000;
+        .navbar {
+          .logo-image {
+            a {
+              margin-top: 0px;
+            }
+          }
+          .navbar-toggler {
+            border-color: #000000;
+            color: #000000;
+          }
+          .signin {
+            position: absolute;
+            top: -57px;
+            right: 70px;
+            a {
+              background: #009cff;
+              border: 1px solid #009cff;
+              font-size: 15px;
+              color: #FFFFFF;
+              display: inline-block;
+              letter-spacing: 0.1px;
+              padding: 10px 26px;
+              &:hover {
+                background: #ffffff;
+                border-color: #009cff;
+                color: #009cff;
+              }
+            }
+          }
+          .navbar-collapse {
+            .nav.navbar-nav {
+              li {
+                a {
+                  color: #000;
+                  padding: 10px 20px;
+                  display: block;
+                }
+                &:first-child {
+                  a {
+                    padding-left: 20px;
+                  }
+                }
+                &.dropdown {
+                  &.show {
+                    .dropdown-menu {
+                      padding-left: 30px;
+                      text-align: left;
+                      box-shadow: none;
+                      width: 100%;
+                      background: #fff;
+                      li {
+                        a {
+                          color: #111111;
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.secondary-menu {
+        min-height: 74px;
+        .sticky_navigation {
+          .navbar {
+            .navbar-collapse {
+              .nav.navbar-nav {
+                li {
+                  a {
+                    padding: 15px 20px;
+                  }
+                  &.dropdown {
+                    &.show {
+                      .dropdown-menu {
+                        box-shadow: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-page-v1-banner {
+  .image-caption {
+    padding-top: 90px;
+  }
+  &.v3-banner {
+    .image-caption {
+      padding-top: 46px;
+      h1 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+section {
+  padding: 50px 0 50px;
+}
+
+.house-listing {
+  padding: 50px 0 25px;
+  .house-wrapper {
+    .house-list {
+      figure {
+        .image-holder {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .list-details {
+        .house-info {
+          display: flow-root;
+          ul {
+            display: block;
+          }
+        }
+      }
+      &:hover {
+        &::after {
+          width: 94%;
+        }
+      }
+    }
+  }
+  &.v2-listing {
+    .house-wrapper {
+      .list-details {
+        .house-info {
+          ul {
+            li {
+              padding-right: 30px;
+              padding-bottom: 5px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rent-sale-listing {
+  padding: 50px 0 50px;
+  &.sale-only {
+    padding: 50px 0 50px;
+  }
+}
+
+.great-community {
+  padding-bottom: 20px;
+  .community-list {
+    margin-bottom: 30px;
+    .community-logo {
+      top: 70px;
+    }
+    .community-details {
+      h4 {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: 50px 0 50px;
+  &.with-bg {
+    .layer {
+      padding: 50px 0px 45px;
+    }
+  }
+  .testimonial-carousel {
+    .owl-item {
+      .testi-item {
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.clients-logo {
+  padding-bottom: 50px;
+  &.with-paady {
+    padding: 50px 0 50px;
+  }
+  &.with-custom-paady {
+    padding-top: 0px;
+  }
+}
+
+.footer {
+  .footer-widgets {
+    padding: 30px 0px 30px;
+    .newsletter-widget {
+      .newsletter-form-fields {
+        .form-group {
+          .input-group {
+            .btn-default {
+              padding: 10px 61px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright-container {
+    padding: 20px 0px 20px;
+    p {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .footer-menu {
+      text-align: center;
+    }
+  }
+}
+
+.find-neighbor {
+  .layer {
+    padding: 45px 0px 35px;
+  }
+}
+
+.double-rent-sale-listing {
+  padding: 50px 0 50px;
+  .double-rent-carousel {
+    .owl-nav {
+      margin-top: 20px;
+      .owl-prev, .owl-next {
+        position: inherit;
+      }
+    }
+  }
+  .double-rent-sale-list {
+    figure {
+      .house-info {
+        padding: 13px 0px 0px 28px;
+      }
+    }
+  }
+  &.ver-two {
+    padding: 50px 0 50px;
+    .listing-pagination {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .double-rent-sale-list {
+      margin-bottom: 30px;
+    }
+  }
+  &.bg-clr {
+    padding-bottom: 46px;
+  }
+}
+
+.portfolio {
+  padding-bottom: 20px;
+}
+
+.recent-news {
+  padding: 50px 0 20px;
+  .news-item {
+    .householder-status {
+      top: 115px;
+    }
+    .news-details {
+      .news-name {
+        h5 {
+          font-size: 15px;
+          line-height: 20px;
+          padding-top: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 13px;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+      .news-date {
+        padding: 12px 10px 12px 10px;
+      }
+    }
+  }
+}
+
+.video-promo-box {
+  .layer {
+    padding: 90px 0px 90px;
+    .promo-icon {
+      padding-top: 0px;
+      text-align: center;
+    }
+    .promo-text {
+      text-align: center;
+      margin-top: 10px;
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+  &.download-free-app {
+    .layer {
+      padding: 50px 0px 50px;
+      .app-info {
+        padding-top: 0px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+.what-you-want {
+  padding-bottom: 20px;
+  .house-types {
+    margin-bottom: 30px;
+    padding: 20px 10px 20px 10px;
+  }
+}
+
+.preferred-choice {
+  padding: 50px 0 20px;
+  .choice-list {
+    margin-bottom: 30px;
+  }
+}
+
+.about-experience {
+  padding: 50px 0 50px;
+  .experience-info {
+    margin-top: 30px;
+    padding-left: 0px;
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.great-agents {
+  padding: 50px 0 20px;
+  .agents-list {
+    margin-bottom: 30px;
+    h4 {
+      margin-top: 15px;
+    }
+    span {
+      display: block;
+    }
+    ul {
+      display: inline-block;
+    }
+    &.v2-agents-list {
+      .thumbnail {
+        img {
+          width: 100%;
+        }
+        .line {
+          &::before, &::after {
+            bottom: 1px;
+          }
+          > span {
+            &::before, &::after {
+              bottom: 40px;
+            }
+          }
+        }
+      }
+      .content {
+        padding: 0px 5px 0;
+        .agent-social {
+          li {
+            &:last-child {
+              a {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  padding-bottom: 10px;
+}
+
+.pricing-table {
+  padding: 50px 0 20px;
+  .pricing-table-list {
+    margin-bottom: 30px;
+  }
+}
+
+.all-agents {
+  padding: 50px 0 20px;
+  .agency-agents-item {
+    padding: 10px 10px 10px 10px;
+    .agency-agents-name {
+      span {
+        display: block;
+      }
+      ul {
+        //display: block;
+        float: none;
+      }
+    }
+    &.agentdetails {
+      img {
+        margin-right: 10px;
+      }
+      .agency-agents-name {
+        margin-top: 0px;
+        .name {
+          display: block;
+        }
+      }
+      ul {
+        li {
+          span {
+            img {
+              margin-right: initial;
+            }
+          }
+        }
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.single-blog {
+  padding: 50px 0 50px;
+  .single-item {
+    .householder-status {
+      top: 190px;
+    }
+    .single-blog-details {
+      blockquote {
+        padding-left: 30px;
+      }
+    }
+  }
+  .sidebar {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+.hacre-carousel {
+  .link-btns {
+    top: 188px;
+  }
+}
+
+.property-details {
+  padding: 50px 0px 50px;
+  .pro-details-item {
+    .description {
+      .table {
+        tbody {
+          tr {
+            td {
+              font-size: 14px;
+              padding: 10px 0px 5px 0;
+            }
+          }
+        }
+      }
+      .agency-agents-item {
+        &.agentdetails {
+          padding: 10px 10px 10px 10px;
+          p {
+            margin-top: 40px;
+            font-size: 14px;
+          }
+          img {
+            margin-right: 15px;
+          }
+          ul {
+            li {
+              span {
+                img {
+                  margin-right: 0px;
+                }
+              }
+              p {
+                margin-top: 0px;
+              }
+            }
+          }
+          .agency-agents-name {
+            ul {
+              float: left !important;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .link-btns {
+      top: 240px;
+    }
+  }
+  .filter-sidebar {
+    .appointment {
+      .appoinment-form-fields {
+        .form-group {
+          .no-r-padding {
+            padding-right: 15px;
+          }
+          .input-group-addon {
+            right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-address {
+  padding-bottom: 18px;
+  .address-list {
+    margin-bottom: 30px;
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+.contact-get-in-touch {
+  padding-bottom: 50px;
+  .address {
+    padding-top: 30px;
+  }
+  .head-off-add {
+    margin-top: 30px;
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
+  .contact-form-fields {
+    margin-bottom: 15px;
+  }
+}
+
+.map {
+  padding-bottom: 50px;
+  &.full-width {
+    padding-bottom: 50px !important;
+  }
+}
+
+.filter-sidebar {
+  padding-left: 0px;
+}
+
+.sidebar {
+  padding-left: 0;
+}

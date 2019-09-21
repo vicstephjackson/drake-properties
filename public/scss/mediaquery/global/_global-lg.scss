@@ -1,0 +1,306 @@
+.header {
+  .top-container {
+    .middle-menu {
+      .middle-menu-contact-info {
+        .menu-contact {
+          a {
+            font-size: 13px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .navbar-primary {
+      .sticky_navigation {
+        z-index: 10;
+        .navbar {
+          .navbar-collapse {
+            .nav.navbar-nav {
+              li {
+                a {
+                  padding: 24px 10px;
+                }
+              }
+            }
+          }
+          .btn-default {
+            padding: 10px 20px;
+          }
+          .create-list {
+            .btn-default {
+              padding: 9px 11px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      &.secondary-menu {
+        min-height: 70px;
+        .sticky_navigation {
+          .navbar {
+            .navbar-collapse {
+              .nav.navbar-nav {
+                li {
+                  a {
+                    padding: 23px 10px;
+                  }
+                }
+              }
+            }
+            .signin {
+              p {
+                a {
+                  padding: 8px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-page-v1-banner {
+  .image-caption {
+    padding-top: 140px;
+    h5 {
+      margin-bottom: 20px;
+    }
+    form {
+      .input-group {
+        .btn-default {
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
+  &.v3-banner {
+    .image-caption {
+      padding-top: 100px;
+    }
+  }
+
+}
+
+.house-listing {
+  .house-wrapper {
+    .house-list {
+      &:hover {
+        &::after {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  &.v2-listing {
+    .house-wrapper {
+      .list-details {
+        .house-info {
+          ul {
+            li {
+              padding-right: 35px;
+              &:nth-child(3) {
+                padding-right: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rent-sale-listing {
+  padding: 120px 0 60px;
+  &.sale-only {
+    padding-top: 60px;
+  }
+}
+
+.double-rent-sale-listing {
+  .double-rent-sale-list {
+    figure {
+      .house-info {
+        padding: 0px 0px 0px 15px;
+        h4 {
+          font-size: 18px;
+        }
+        span {
+          font-size: 13px;
+        }
+        .price {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .double-rent-carousel {
+    .owl-nav {
+      display: block;
+    }
+  }
+  .listing-pagination {
+    margin-bottom: 6px;
+  }
+}
+
+.recent-news {
+  .news-item {
+    .householder-status {
+      left: 30px;
+      top: 140px;
+    }
+    &.no-image {
+      .householder-status {
+        margin-left: 0px;
+      }
+      .news-details {
+        .news-name {
+          h5, p {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+        }
+        .news-date {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+.great-community {
+  .community-list {
+    .community-logo {
+      top: 100px;
+    }
+  }
+}
+
+.great-agents {
+  .agents-list {
+    &.v2-agents-list {
+      .content {
+        padding: 0px 5px 0;
+        .agent-social {
+          li {
+            &:last-child {
+              a {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.what-you-want {
+  .house-types {
+    padding: 20px 10px 20px 10px;
+  }
+}
+
+.all-agents {
+  .agency-agents-item {
+    padding: 10px 10px 10px 10px;
+    .agency-agents-name {
+      padding-left: 120px;
+      ul {
+        li {
+          a {
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  .latest-news-widget {
+    .latest-news-list {
+      .widget-post-details {
+        h5 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.property-details {
+  .pro-details-item {
+    .link-btns {
+      top: 300px;
+    }
+  }
+  .agency-agents-item {
+    &.agentdetails {
+      padding: 10px 10px 10px 10px;
+    }
+  }
+}
+
+.single-blog {
+  .single-item {
+    .householder-status {
+      top: 250px;
+    }
+  }
+}
+
+.footer {
+  .footer-widgets {
+    .get-in-touch-widget {
+      ul {
+        li {
+          p {
+            font-size: 13px;
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .business-hrs-widget {
+      .table {
+        tbody {
+          tr {
+            td {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .newsletter-widget {
+      .newsletter-form-fields {
+        .form-group {
+          .input-group {
+            .btn-default {
+              padding: 10px 46px;
+            }
+          }
+        }
+      }
+    }
+  }
+}   
+
+.filter-sidebar{
+  .help{
+    .help-text{
+      top: 55px;
+    }
+  }
+}

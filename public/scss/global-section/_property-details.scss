@@ -1,0 +1,182 @@
+/* -------------------------------------
+2 Global Sections - 2.29 Property Details
+---------------------------------------- */
+.property-details {
+  padding: 120px 0 93px;
+  .pro-details-item {
+    img {
+      width: 100%;
+    }
+    .house-status {
+      position: absolute;
+      top: 10px;
+      padding-top: 8px;
+      left: 30px;
+      span {
+        font-size: 12px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 4px 11px;
+        color: $primary_color;
+        text-transform: uppercase;
+        &.rent {
+          opacity: 0.6;
+        }
+        &.featured {
+          background: #e03434;
+        }
+      }
+    }
+    .link-btns {
+      position: absolute;
+      top: 370px;
+      padding-left: 20px;
+      ul {
+        li {
+          display: inline-block;
+          float: left;
+          a {
+            i {
+              padding: 12px;
+              background: rgba(0, 0, 0, 0.4);
+              color: $primary_color;
+              margin-right: 5px;
+              font-size: 17.6px;
+              border-radius: 3px;
+            }
+            &:hover {
+              i {
+                border: 1px solid #fff;
+                background: transparent;
+                padding: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pro-head {
+      border-bottom: 1px solid #d9d9d9;
+      h2 {
+        font-size: 26px;
+        color: #111111;
+        margin-top: 32px;
+        margin-bottom: 6px;
+        display: inline-block;
+        .id {
+          font-size: 18px;
+        }
+      }
+      &.mr-o {
+        h2 {
+          margin-top: 0px;
+        }
+        span {
+          margin-top: 0px;
+        }
+      }
+      .price {
+        display: inline-block;
+        background: #009cff;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 6px 21px;
+        margin-top: 32px;
+      }
+      h6 {
+        color: #666666;
+        font-size: 14px;
+        margin-bottom: 25px;
+        display: inline-block;
+      }
+      .sq-ft {
+        font-size: 15px;
+        color: #777777;
+      }
+    }
+    .description {
+      h4 {
+        font-size: 22px;
+        color: #111111;
+        margin-top: 26px;
+        margin-bottom: 17px;
+        &.pro-feature {
+          margin-bottom: 18px;
+        }
+        &.pro-dets{
+          margin-bottom: 7px;
+        }
+      }
+      .pro-text {
+        font-weight: 500;
+        font-size: 15px;
+        color: #666666;
+        line-height: 24px;
+        margin-bottom: 39px;
+      }
+      .table {
+        margin-bottom: 41px;
+        tbody {
+          tr {
+            td {
+              font-size: 16px;
+              color: #111111;
+              line-height: 22px;
+              padding: 10px 10px 0px 0;
+              border-top: 0;
+              width: 210px;
+              span {
+                color: #777777;
+              }
+            }
+          }
+        }
+      }
+      .features {
+        margin-bottom: 28px;
+        &.feature-list-ul {
+          display: inline-block;
+          float: left;
+          padding-right: 60px;
+        }
+        li {
+          font-size: 16px;
+          padding-bottom: 6px;
+          color: #111111;
+          i {
+            color: #009cff;
+            font-size: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+      .agency-agents-item {
+        img {
+          width: auto;
+        }
+        .agency-agents-name {
+          h4 {
+            margin: inherit;
+          }
+          ul {
+            li {
+              a {
+                i {
+                  color: $primary_color;
+                }
+              }
+            }
+          }
+        }
+        .hvr-sweep-to-right {
+          &:hover {
+            color: #009cff;
+            &::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

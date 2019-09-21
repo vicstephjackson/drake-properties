@@ -1,0 +1,172 @@
+/* -------------------------------------
+2 Global Sections - 2.4 Properties Sale & Rent
+---------------------------------------- */
+.rent-sale-listing {
+  background: #f6f6f6;
+  padding: 124px 0 103px;
+  &.sale-only {
+    padding-top: 103px;
+    padding-bottom: 120px;
+  }
+  &.ver-2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .top-head {
+    h4 {
+      text-align: left;
+      font-size: 28px;
+      margin-bottom: 36px;
+    }
+  }
+  .rent-carousel, .sale-carousel {
+    .owl-item {
+      .rent-sale-list {
+        figure {
+          position: relative;
+          margin: 0;
+          overflow: hidden;
+          .image-holder {
+            overflow: hidden;
+            img {
+              position: relative;
+            }
+          }
+          figcaption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px 20px 20px 20px;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+            -moz-transform: translateY(100%);
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.4s, -webkit-transform 0.4s;
+            &.house-info {
+              .price {
+                font-weight: 700;
+                color: $primary_color;
+                font-size: 20px;
+                line-height: 24px;
+              }
+              span {
+                font-size: 13px;
+                color: $primary_color;
+              }
+              p {
+                color: $primary_color;
+                font-weight: 500;
+                font-size: 13px;
+              }
+            }
+          }
+          .house-status {
+            position: absolute;
+            top: 0px;
+            padding-top: 15px;
+            left: 10px;
+            transition: transform 0.4s, -webkit-transform 0.4s;
+            transform: translateX(10%);
+            span {
+              font-size: 10px;
+              background: #0c2e4f;
+              padding: 2px 7px;
+              color: #FFFFFF;
+              text-transform: uppercase;
+            }
+          }
+          .link-btns {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            z-index: 1;
+            ul {
+              li {
+                a {
+                  i {
+                    padding: 8px 8px;
+                    background: rgba(0, 0, 0, 0.5);
+                    margin-bottom: 5px;
+                    color: $primary_color;
+                    font-size: 12px;
+                    border-radius: 3px;
+                    width: 28px;
+                    height: 28px;
+                    &.fa-plus {
+                      padding: 8px 9px;
+                    }
+                  }
+                  &:hover {
+                    i {
+                      border: 1px solid #fff;
+                      background: transparent;
+                      padding: 7px 7px;
+                      &.fa-plus {
+                        padding: 7px 8px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.btn-transform {
+              transition: transform 0.4s, -webkit-transform 0.4s;
+              transform: translateX(180%);
+            }
+          }
+        }
+      }
+      &:hover {
+        figure {
+          figcaption {
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+          }
+          .house-status {
+            transform: translateX(-75px);
+          }
+          .link-btns {
+            &.btn-transform {
+              transform: translateX(-5px);
+            }
+          }
+        }
+      }
+    }
+    .owl-nav {
+      margin-top: 0px;
+      .owl-next, .owl-prev {
+        position: absolute;
+        right: 0;
+        top: -69px;
+        background: transparent;
+        border: 1px solid #c8c8c8;
+        padding: 5px 12px;
+        opacity: 1;
+        border-radius: 0px;
+        i {
+          color: #666666;
+          font-size: 15px;
+        }
+        &:hover {
+          border-color: #009cff;
+          i {
+            color: #009cff;
+          }
+        }
+      }
+      .owl-prev {
+        right: 40px;
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+}

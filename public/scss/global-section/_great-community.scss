@@ -1,0 +1,63 @@
+/* -------------------------------------
+2 Global Sections - 2.6 Greater Communities
+---------------------------------------- */
+.great-community {
+  .community-list {
+    background: $primary_color;
+    box-shadow: 1px 0px 9px -1px #ccc;
+    figure {
+      overflow: hidden;
+      position: relative;
+      .image-holder {
+        img {
+          transition: all 400ms ease-in-out;
+        }
+      }
+      .overlay-1 {
+        background-color: rgba(2, 47, 71, 0.12);
+        position: absolute;
+        opacity: 0;
+        transform: scaleY(0);
+        transition: all 400ms ease-in-out;
+      }
+    }
+    .community-logo {
+      position: absolute;
+      top: 131px;
+      left: 35px;
+      img {
+        border-radius: 5px;
+      }
+    }
+    .community-details {
+      padding: 20px 10px 19px 20px;
+      h4 {
+        color: #111111;
+        margin-bottom: 9px;
+      }
+      p {
+        color: #111111;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      span {
+        color: #777777;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    &:hover {
+      figure {
+        .image-holder {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .overlay-1 {
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}

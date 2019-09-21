@@ -1,0 +1,28 @@
+/* -------------------------------------
+2 Global Sections - 2.15 Discover What You Want
+---------------------------------------- */
+.preferred-choice {
+  padding: 119px 0px 115px;
+  .choice-list {
+    img{
+      margin-bottom: 14px;
+      height: 39px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-weight: 500;
+      color: #777777;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    a{
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+  }
+}

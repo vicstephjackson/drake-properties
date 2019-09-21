@@ -1,0 +1,63 @@
+/* -------------------------------------
+2 Global Sections - 2.7 Testimonial
+---------------------------------------- */
+.testimonials {
+  padding: 120px 0px 96px;
+  padding-bottom: 0px;
+  h4 {
+    color: #111111;
+  }
+  .testimonial-carousel {
+    .owl-item {
+      .testi-item {
+        img {
+          width: auto;
+          display: inline-block;
+          margin-bottom: 44px;
+        }
+        span {
+          display: block;
+          color: #009cff;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #777777;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+          display: inline-block;
+          max-width: 650px;
+        }
+      }
+    }
+    .owl-nav, .owl-dots {
+      display: none;
+    }
+  }
+  &.with-bg {
+    background-image: url("../images/testibg-clr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    .layer {
+      padding: 120px 0px 112px;
+      h4 {
+        color: $primary_color;
+      }
+      .testimonial-carousel {
+        .owl-item {
+          .testi-item {
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

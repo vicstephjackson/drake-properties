@@ -1,0 +1,38 @@
+/* -------------------------------------
+2 Global Sections - 2.14 Discover What You Want
+---------------------------------------- */
+.what-you-want {
+  background: #f6f6f6;
+  .house-types {
+    background: #ffffff;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 1px 1px 9px -2px #ccc;
+    img {
+      background: #009cff;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: #111111;
+      font-size: 24px;
+      line-height: 27px;
+      margin-bottom: 14px;
+
+    }
+    p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 6px;
+      line-height: 24px;
+    }
+    a {
+      color: #009cff;
+      font-size: 12px;
+    }
+    &:hover {
+      a {
+        color: #111111;
+      }
+    }
+  }
+}

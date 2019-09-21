@@ -1,0 +1,254 @@
+/* -------------------------------------
+2 Global Sections - 2.3 New House Listing
+---------------------------------------- */
+.house-listing {
+  padding: 118px 0 80px;
+  .house-wrapper {
+    .house-list {
+      border: 1px solid #e2e2e2;
+      margin-bottom: 40px;
+      figure {
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        figcaption {
+          position: absolute;
+          bottom: 0px;
+          background-color: rgba(0, 0, 0, 0.5);
+          right: 0px;
+          left: 0px;
+          color: #ffffff;
+          text-align: center;
+          padding: 7px 10px;
+          opacity: 0;
+          transform: translateY(40px);
+          transition: all 400ms ease-in-out;
+          ul {
+            position: relative;
+            display: flex;
+            li {
+              display: inline-block;
+              a {
+                i {
+                  padding: 8px 8px;
+                  background: rgba(0, 0, 0, 0.4);
+                  color: $primary_color;
+                  margin-right: 5px;
+                  font-size: 12px;
+                  border-radius: 3px;
+                  &.fa-plus {
+                    padding: 8px 9px;
+                  }
+                }
+                &:hover {
+                  i {
+                    border: 1px solid #fff;
+                    background: transparent;
+                    padding: 7px 7px;
+                    &.fa-plus {
+                      padding: 7px 8px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .house-status {
+        position: absolute;
+        right: 34px;
+        padding-top: 15px;
+        z-index: 1;
+        span {
+          font-size: 10px;
+          background: rgba(0, 0, 0, 0.6);
+          padding: 2px 7px;
+          color: $primary_color;
+          text-transform: uppercase;
+          &.featured {
+            background: #e03434;
+          }
+        }
+      }
+      .list-details {
+        .house-info {
+          display: inline-block;
+          padding: 0px 10px 14px 20px;
+          border-bottom: 1px solid #e2e2e2;
+          p {
+            display: inline-block;
+            background: #009cff;
+            color: $primary_color;
+            font-weight: 500;
+            font-size: 14px;
+            border-radius: 3px;
+            padding: 4px 10px;
+            margin-bottom: 14px;
+          }
+          h4 {
+            text-align: left;
+            font-size: 21px;
+            margin-bottom: 3px;
+            color: #111111;
+            a {
+              color: #111111;
+              &:hover {
+                color: #009cff;
+              }
+            }
+          }
+          span {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #9b9b9b;
+            i {
+              margin-right: 7px;
+              font-size: 14px;
+            }
+          }
+          ul {
+            display: inline-block;
+            margin-top: 16px;
+            li {
+              display: inline-block;
+              float: left;
+              padding-right: 10px;
+              font-size: 14px;
+              &:last-child {
+                display: none;
+              }
+            }
+          }
+        }
+        .house-holder-info {
+          padding: 13px 10px 15px 19px;
+          border-bottom: 4px solid #e5e5f8;
+          filter: alpha(opacity=0);
+          -webkit-transition: all .4s ease 0s;
+          -o-transition: all .4s ease 0s;
+          transition: all .4s ease 0s;
+          img {
+            margin-right: 10px;
+          }
+          span {
+            font-weight: 300;
+            color: #111111;
+            font-size: 14px;
+            a {
+              color: #111111;
+              &:hover {
+                color: #009cff;
+              }
+            }
+          }
+          p {
+            float: right;
+            font-size: 12px;
+            color: #9b9b9b;
+            padding-top: 6px;
+            line-height: 24px;
+          }
+        }
+      }
+      &:hover {
+        &::after {
+          width: 92%;
+          opacity: 1;
+          filter: alpha(opacity=100);
+        }
+        figure {
+          figcaption {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+      }
+      &::after {
+        content: '';
+        background: #009cff;
+        height: 4px;
+        width: 40%;
+        position: absolute;
+        bottom: 41px;
+        //left: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all .4s ease 0s;
+        -o-transition: all .4s ease 0s;
+        transition: all .4s ease 0s;
+      }
+    }
+  }
+  &.v2-listing {
+    .house-wrapper {
+      .list-details {
+        .house-info {
+          padding-bottom: 0px;
+          span {
+            font-size: 15px;
+            color: #555555;
+          }
+          ul {
+            li {
+              padding-right: 50px;
+              padding-bottom: 15px;
+              color: #333333;
+              font-size: 13px;
+              &:nth-child(3) {
+                padding-right: 38px;
+              }
+              &:last-child {
+                display: block;
+              }
+            }
+          }
+        }
+        .house-holder-info {
+          span {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .listing-pagination {
+    margin-bottom: 40px;
+  }
+}
+
+.listing-pagination {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  ul {
+    .page-item {
+      margin-right: 10px;
+      .page-link {
+        color: #777777;
+        font-size: 14px;
+        border-radius: 0px;
+        padding: 11px 15px;
+      }
+      &:first-child {
+        a {
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
+      }
+      &:last-child {
+        a {
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+      }
+      &.active, &:hover {
+        .page-link {
+          border: 1px solid #007bff;
+          color: #007bff;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

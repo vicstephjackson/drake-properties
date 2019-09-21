@@ -1,0 +1,129 @@
+/* -------------------------------------
+2 Global Sections - 2.2 Home Page | 2.2.1 Home Page Banner
+---------------------------------------- */
+
+.home-page-v1-banner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  img {
+    position: absolute;
+    width: 100%;
+  }
+  .image-caption {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 220px;
+    h1 {
+      font-size: 38px;
+      color: #fff;
+      line-height: 20px;
+      margin-bottom: 23px;
+    }
+    h5 {
+      font-size: 19px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 45px;
+    }
+    form {
+      .form-group,
+      .input-group {
+        .form-control {
+          border-radius: 0px;
+          height: 72px;
+          padding-top: 20px;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        select::-ms-expand {
+          display: none;
+        }
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          display: block;
+          font-size: 16px;
+          line-height: 1.75;
+          color: #333;
+          background-color: #ffffff;
+          background-image: none;
+          -ms-word-break: normal;
+          word-break: normal;
+          border-right: 0px;
+        }
+        .btn-default {
+          padding: 15px 41px;
+          border-radius: 0px;
+          line-height: 20px;
+        }
+        label {
+          position: absolute;
+          margin-bottom: 12px;
+          left: 0;
+          padding-left: 21px;
+          padding-top: 8px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 13px;
+          color: #777777;
+        }
+      }
+      .form-group {
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f107";
+          font-style: normal;
+          text-decoration: inherit;
+          color: #222222;
+          right: 28px;
+          top: 20px;
+          height: 34px;
+          padding: 15px 0px 0px 8px;
+          position: absolute;
+          pointer-events: none;
+        }
+      }
+      .input-group {
+        .form-control {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 30px;
+          color: #777777;
+          font-family: 'Roboto', sans-serif;
+          padding-top: 5px;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &.v3-banner {
+    .image-caption {
+      padding-top: 185px;
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 28px;
+      }
+      .btn-default {
+        border-radius: 3px;
+        line-height: 24px;
+        padding: 11px 33px;
+        &.hvr-sweep-to-right {
+          &:hover {
+            color: #009cff;
+            border: 1px solid $primary_color;
+            &::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

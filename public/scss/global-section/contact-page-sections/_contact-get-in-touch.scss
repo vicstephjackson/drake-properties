@@ -1,0 +1,86 @@
+/* -------------------------------------
+2 Global Sections - 2.31 Get In Touch
+---------------------------------------- */
+.contact-get-in-touch {
+  padding-top: 0px;
+  padding-bottom: 103px;
+  .top-head {
+    h4 {
+      text-align: left;
+    }
+  }
+  .map {
+    padding: 0px;
+    iframe {
+      height: 380px;
+    }
+  }
+  .address {
+    padding-top: 58px;
+    ul {
+      li {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #e5e5e5;
+        &:last-child {
+          //border-bottom: 0px;
+          //padding-bottom: 0px;
+        }
+        &:first-child {
+          padding-top: 0px;
+        }
+        img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+        }
+        span {
+          padding-left: 37px;
+          font-weight: 500;
+          font-size: 15px;
+          color: #777777;
+          margin-bottom: 7px;
+          display: inline-block;
+        }
+        p {
+          padding-left: 58px;
+          font-weight: 500;
+          font-size: 18px;
+          color: #111111;
+          a {
+            color: #111111;
+            &:hover {
+              color: $button_default_bg;
+            }
+          }
+        }
+      }
+    }
+    &.head-off {
+      padding-top: 0px;
+      ul {
+        li {
+          padding-bottom: 12px;
+          padding-top: 15px;
+          border-bottom: 0px;
+          &:last-child {
+            border-bottom: 0px;
+            padding-bottom: 0px;
+          }
+          &:first-child {
+            padding-top: 0px;
+          }
+          img {
+            display: none;
+          }
+          span {
+            padding-left: 0px;
+          }
+          p {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}

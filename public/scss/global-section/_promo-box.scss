@@ -1,0 +1,72 @@
+/* -------------------------------------
+2 Global Sections - 2.13 Promo Box
+---------------------------------------- */
+.video-promo-box {
+  background-image: url("../images/home-3-sec-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  .layer {
+    padding: 130px 0px 138px;
+    .promo-icon {
+      padding-top: 60px;
+      a {
+        i {
+          font-size: 18px;
+          color: #111111;
+          background: #ffffff;
+          border-radius: 100%;
+          padding: 25px 25px 25px 28px;
+        }
+      }
+    }
+
+    .promo-text {
+      h1 {
+        font-size: 37px;
+        line-height: 47px;
+        color: #ffffff;
+        font-style: italic;
+        margin-bottom: 6px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 40px;
+        color: #ffffff;
+      }
+      span {
+        font-size: 15px;
+        color: #ffffff;
+      }
+    }
+
+  }
+  &.download-free-app {
+    background-image: url("../images/home-3-google-app-bg-whtclr.png");
+    .layer {
+      padding: 101px 0px 1px;
+      .app-info {
+        padding-top: 84px;
+        padding-left: 69px;
+        h4 {
+          color: #ffffff;
+          font-size: 28px;
+          line-height: 24px;
+          margin-bottom: 21px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          margin-bottom: 33px;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

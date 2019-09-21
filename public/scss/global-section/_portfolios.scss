@@ -1,0 +1,158 @@
+/* -------------------------------------
+2 Global Sections - 2.10 Popular Cities
+---------------------------------------- */
+.portfolio {
+  padding-bottom: 90px;
+  .portfolio-grid, .mas-portfolio {
+    .grid-item {
+      margin-bottom: 30px;
+      figure {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        .img-holder {
+          overflow: hidden;
+        }
+      }
+      .count-status {
+        position: absolute;
+        left: 20px;
+        padding-top: 19px;
+        z-index: 1;
+        span {
+          font-size: 11px;
+          background: #0c2e4f;
+          padding: 5px;
+          color: $primary_color;
+          text-transform: uppercase;
+          &.rent {
+            opacity: 0.6;
+          }
+          &.featured {
+            background: #e03434;
+          }
+        }
+      }
+      .effect-phoebe {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          opacity: 1;
+          -webkit-transition: opacity 0.35s;
+          transition: opacity 0.35s;
+          -webkit-transform: scaleY(1);
+          -moz-transform: scaleY(1);
+          -o-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+          transform: scaleY(1);
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+        }
+        figcaption {
+          color: #ffffff;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s ease-in-out;
+          h4 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            font-size: 24px;
+            padding: 20px 20px;
+          }
+          &::before,
+          &::after {
+            pointer-events: none;
+          }
+        }
+        &:hover {
+          img {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+          figcaption {
+            &::before {
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+            }
+          }
+          h4 {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+      &:hover {
+        figcaption {
+          background: linear-gradient(to bottom, rgba(254, 246, 246, 0) 70%, rgba(0, 0, 0, 0.27) 80%, rgba(11, 12, 12, 0.91) 100%);
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    &.mas-portfolio {
+      .grid-item {
+        .effect-phoebe {
+          h4 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 96px;
+          }
+          .count-status {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 112px;
+            height: 26px;
+            opacity: 0;
+            span {
+              background: $button_default_bg;
+            }
+          }
+          &:hover {
+            .count-status {
+              opacity: 1;
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+        &:hover {
+          figcaption {
+            background: linear-gradient(to bottom, rgba(254, 246, 246, 0) -10%, rgba(0, 0, 0, 0.27) 10%, rgba(11, 12, 12, 0.91) 120%);
+          }
+        }
+      }
+    }
+  }
+}

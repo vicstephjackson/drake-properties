@@ -1,0 +1,80 @@
+.great-community {
+  .community-list {
+    .community-logo {
+      top: 120px;
+    }
+  }
+}
+
+.house-listing {
+  .house-wrapper {
+    .house-list {
+      &:hover {
+        &::after {
+          width: 91%;
+        }
+      }
+    }
+  }
+}
+
+.recent-news {
+  .news-item {
+    .householder-status {
+      top: 165px;
+    }
+  }
+}
+
+.single-blog {
+  .single-item {
+    .householder-status {
+      top: 114px;
+      left: 28px;
+    }
+  }
+}
+
+.hacre-carousel {
+  .link-btns {
+    top: 120px;
+    ul {
+      li {
+        a {
+          i {
+            padding: 8px;
+            font-size: 13px;
+          }
+          &:hover {
+            i {
+              padding: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.property-details {
+  .pro-details-item {
+    .link-btns {
+      top: 154px;
+      ul {
+        li {
+          a {
+            i {
+              padding: 8px;
+              font-size: 13px;
+            }
+            &:hover {
+              i {
+                padding: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* -------------------------------------
+2 Global Sections - 2.30 Contact Address
+---------------------------------------- */
+.contact-address {
+  padding-bottom: 74px;
+  .address-list {
+    h4 {
+      font-size: 24px;
+      line-height: 24px;
+      color: #111111;
+      margin-top: 16px;
+      margin-bottom: 23px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      color: #444444;
+      font-weight: 500;
+      margin-bottom: 18px;
+      span {
+        padding-left: 10px;
+        a {
+          color: #444444;
+          &:hover {
+            color: $default_color;
+          }
+        }
+      }
+    }
+  }
+}

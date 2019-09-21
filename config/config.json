@@ -1,0 +1,25 @@
+{
+    "development": {
+      "username": "root",
+      "port": 3306,
+      "password": "Corina08",
+      "database": "drake_properties_db",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "port":3306,
+      "password": "Corina08",
+      "database": "database_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "Corina08",
+      "database": "drake_properties_db",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }

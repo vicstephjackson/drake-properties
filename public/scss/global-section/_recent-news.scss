@@ -1,0 +1,123 @@
+/* -------------------------------------
+2 Global Sections - 2.11 Recent News
+---------------------------------------- */
+.recent-news {
+  padding-bottom: 79px;
+  padding-top: 119px;
+  .news-item {
+    background: #f7f7f7;
+    margin-bottom: 40px;
+    .householder-status {
+      position: absolute;
+      left: 40px;
+      top: 180px;
+      span {
+        font-size: 12px;
+        background: #009cff;
+        padding: 8px 13px;
+        color: $primary_color;
+        text-transform: uppercase;
+        &.rent {
+          opacity: 0.6;
+        }
+        &.featured {
+          background: #e03434;
+        }
+      }
+    }
+    .news-details {
+      .news-name {
+        border-bottom: 1px solid #d2d2d2;
+        h5 {
+          font-size: 18px;
+          line-height: 28px;
+          color: #111111;
+          margin-bottom: 15px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 23px;
+          a {
+            color: #111111;
+            &:hover {
+              color: #009cff;
+            }
+          }
+        }
+        p {
+          font-size: 15px;
+          line-height: 26px;
+          color: #444444;
+          margin-bottom: 21px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+      .news-date {
+        padding: 12px 20px 12px 20px;
+        span {
+          font-size: 14px;
+          line-height: 26px;
+          color: #111111;
+          margin-top: 10px;
+          a {
+            color: #111111;
+            &:hover {
+              color: #009cff;
+            }
+          }
+        }
+      }
+    }
+    figure {
+      overflow: hidden;
+      position: relative;
+      .image-holder {
+        position: relative;
+        overflow: hidden;
+        img {
+          transform: scale(1.1);
+          transition: all 0.7s ease;
+        }
+      }
+    }
+    &:hover {
+      figure {
+        .image-holder {
+          img {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+    &.no-image {
+      background: transparent;
+      margin-bottom: 30px;
+      .householder-status {
+        position: relative;
+        left: 0;
+        top: 0px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .news-details {
+        .news-name {
+          h5 {
+            padding-top: 7px;
+            padding-left: 10px;
+          }
+          p {
+            padding-left: 10px;
+            margin-bottom: 13px;
+          }
+        }
+        .news-date {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .listing-pagination {
+    margin-bottom: 41px;
+    margin-top: 20px;
+  }
+}
